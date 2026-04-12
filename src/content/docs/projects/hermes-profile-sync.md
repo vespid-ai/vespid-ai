@@ -5,17 +5,9 @@ description: Portable profile export, sanitization, sync, and restore for Hermes
 
 # hermes-profile-sync
 
-`hermes-profile-sync` is the profile-portability layer in the vespid-ai stack.
-It is an open-source toolkit for moving a Hermes operator profile across machines without treating local agent state as one unsafe blob.
+`hermes-profile-sync` is the profile-portability layer in the vespid.ai stack. It is an open-source toolkit for moving a Hermes operator profile across machines without treating local agent state as one unsafe blob.
 
-## Snapshot
-
-- Repo: https://github.com/vespid-ai/hermes-profile-sync
-- Visibility: public
-- Current stage: early Python CLI with inspect/export/import in place
-- Scope: profile classification, manifest-driven export/import, and safer operator continuity
-
-## Why this exists
+## Overview
 
 A useful Hermes setup is not one thing. It mixes:
 
@@ -26,7 +18,16 @@ A useful Hermes setup is not one thing. It mixes:
 
 This project exists so profile portability does not collapse into either unsafe full-folder copying or brittle manual migration.
 
-## What is real now
+Instead, it tries to turn operator continuity into an explicit, reviewable system surface.
+
+## Snapshot
+
+- Repo: https://github.com/vespid-ai/hermes-profile-sync
+- Visibility: public
+- Current stage: early Python CLI with inspect/export/import in place
+- Scope: profile classification, manifest-driven export/import, and safer operator continuity
+
+## What is already real
 
 The repo already has:
 
@@ -36,15 +37,27 @@ The repo already has:
 - merge / overwrite / dry-run restore paths
 - tests covering the initial portability workflow
 
+That is enough to prove the basic direction: portability can be structured, inspectable, and safer than copying entire local agent folders by hand.
+
 ## Trust boundary
 
 The key boundary here is between what is portable and what is merely present.
-Memories, config, and user-authored skills should move differently from logs, checkpoints, browser profiles, and credentials.
+
+Memories, config, and user-authored skills should move differently from:
+
+- logs
+- checkpoints
+- browser profiles
+- credentials
+- other machine-specific or high-risk artifacts
+
+If those categories blur together, operator convenience becomes a security liability.
 
 ## Why it matters in the stack
 
 If `vespid` handles execution and `SkillAuth` handles authority, `hermes-profile-sync` handles operator continuity.
-It turns local agent setup from an ad hoc copy problem into an explicit, reviewable system surface.
+
+It matters because real agent systems are not only about runtime and authorization. They are also about whether an operator can move to a new machine, recover a setup, or collaborate across environments without rebuilding everything from scratch or leaking sensitive state.
 
 ## Next milestone
 
@@ -57,3 +70,9 @@ It turns local agent setup from an ad hoc copy problem into an explicit, reviewa
 - Read the repo: https://github.com/vespid-ai/hermes-profile-sync
 - Start with the README and current CLI behavior
 - Treat it as portability infrastructure for serious agent operators, not generic backup tooling
+
+## Related reading
+
+- [Projects](/projects/): the wider stack context around portability.
+- [Documentation](/docs/): stable guidance for where operator state belongs in the reading system.
+- [Blog](/blog/): field lessons and rationale that may later become portability references.
