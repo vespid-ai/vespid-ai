@@ -29,11 +29,18 @@ const isActive = (href) => {
   </div>
 
   <nav class="vespid-topnav sl-hidden xl:sl-flex print:hidden" aria-label="Primary">
-    {navLinks.map((link) => (
-      <a href={link.href} class:list={{ 'vespid-topnav__link': true, 'is-active': isActive(link.href) }}>
-        {link.label}
-      </a>
-    ))}
+    {navLinks.map((link) => {
+      const active = isActive(link.href);
+      return (
+        <a
+          href={link.href}
+          class:list={{ 'vespid-topnav__link': true, 'is-active': active }}
+          aria-current={active ? 'page' : undefined}
+        >
+          {link.label}
+        </a>
+      );
+    })}
   </nav>
 
   <div class="vespid-header-tools sl-flex print:hidden">
