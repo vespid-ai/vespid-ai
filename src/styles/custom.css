@@ -461,3 +461,9 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   :root[data-theme='light'] .vespid-proof-bar { background: rgba(255,255,255,0.58); }
   :root[data-theme='light'] .vespid-proof-bar > div { background: transparent; }
 }
+
+@media (max-width: 40em) {
+  .hero .vespid-pills li:nth-child(n + 3) {
+    display: none;
+  }
+}
