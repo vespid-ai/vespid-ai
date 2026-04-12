@@ -64,8 +64,8 @@ body {
   position: relative;
   border: 1px solid var(--sl-color-hairline);
   border-radius: 28px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
-  box-shadow: var(--sl-shadow-lg);
+  background: linear-gradient(135deg, rgba(18, 22, 34, 0.96), rgba(8, 10, 18, 0.96));
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(124, 140, 255, 0.08);
   overflow: hidden;
 }
 
@@ -80,27 +80,41 @@ body {
 }
 
 .hero .tagline {
-  max-width: 38rem;
+  max-width: 34rem;
   color: #eef1ff;
-  font-size: clamp(2.7rem, 8vw, 5.15rem);
-  line-height: 0.94;
-  letter-spacing: -0.055em;
-  font-weight: 800;
+  font-size: clamp(2.35rem, 6vw, 4.55rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  font-weight: 720;
 }
 
 :root[data-theme='light'] .hero .tagline { color: #111827; }
-.hero .hero-html { color: var(--sl-color-text); }
+.hero .hero-html {
+  color: var(--sl-color-text);
+  max-width: 35rem;
+}
 .hero picture, .hero img { filter: saturate(1.05) contrast(1.02); }
 .hero .image-frame { border-radius: 24px; }
-.hero .actions { gap: 0.9rem; }
-.hero .action { border-radius: 999px; }
-.hero .action.primary { box-shadow: 0 18px 40px rgba(124, 140, 255, 0.25); }
+.hero .actions { gap: 1rem; margin-top: 0.35rem; }
+.hero .action { border-radius: 14px; }
+.hero .action.primary {
+  box-shadow: 0 14px 30px rgba(124, 140, 255, 0.18);
+  background: #f3f5ff;
+  color: #0b1020;
+}
 .hero .action.minimal { border: 1px solid var(--sl-color-hairline); background: rgba(255,255,255,0.04); }
 
 .sl-markdown-content :where(.vespid-intro) {
   margin-top: 2rem;
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
+}
+
+.vespid-intro > p:first-child {
+  max-width: 34rem;
+  font-size: 1rem;
+  line-height: 1.68;
+  color: rgba(212, 216, 228, 0.82);
 }
 
 .vespid-pills, .vespid-feature-list {
@@ -129,7 +143,13 @@ body {
 .vespid-value-grid,
 .vespid-project-grid { display: grid; gap: 1rem; }
 
-.vespid-proof-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 2rem 0 3rem; }
+.vespid-proof-bar {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 2.1rem 0 3.4rem;
+  padding: 0.2rem 0;
+  border-top: 1px solid var(--sl-color-hairline);
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
 .vespid-proof-bar > div,
 .vespid-strip > div,
 .vespid-card,
@@ -143,6 +163,19 @@ body {
   box-shadow: var(--sl-shadow-sm);
 }
 
+.vespid-proof-bar > div {
+  padding: 1rem 1.15rem;
+  border: 0;
+  border-right: 1px solid var(--sl-color-hairline);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.vespid-proof-bar > div:last-child {
+  border-right: 0;
+}
+
 .vespid-proof-bar strong,
 .vespid-hub-card h3,
 .vespid-featured-project h2,
@@ -151,16 +184,26 @@ body {
 .vespid-section h2,
 .vespid-section h3 { letter-spacing: -0.04em; }
 
-.vespid-proof-bar strong { display:block; margin-bottom:0.35rem; color: var(--sl-color-text-accent); }
-.vespid-proof-bar span { color: var(--sl-color-text); font-size: 0.95rem; }
+.vespid-proof-bar strong {
+  display:block;
+  margin-bottom:0.35rem;
+  color: var(--sl-color-text-accent);
+  font-size: 0.94rem;
+  letter-spacing: -0.02em;
+}
+.vespid-proof-bar span {
+  color: rgba(212, 216, 228, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
 
 .vespid-section {
-  margin: 3rem 0;
-  padding: 1.5rem;
+  margin: 4.25rem 0;
+  padding: 1.8rem;
   border: 1px solid var(--sl-color-hairline);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-  box-shadow: var(--sl-shadow-md);
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
 .vespid-value-grid {
@@ -168,29 +211,42 @@ body {
   align-items: stretch;
 }
 
-.vespid-feature-layout { grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr); margin: 3rem 0; }
+.vespid-feature-layout { grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.8fr); margin: 3.6rem 0 4.3rem; }
 .vespid-featured-project,
 .vespid-side-card,
 .vespid-hub-card,
 .vespid-project-card { display:block; text-decoration:none; color:inherit; }
 
 .vespid-featured-project {
-  padding: 1.5rem;
-  min-height: 22rem;
+  padding: 2rem;
+  min-height: 24rem;
   border-radius: 28px;
-  border: 1px solid rgba(124, 140, 255, 0.18);
+  border: 1px solid rgba(124, 140, 255, 0.22);
   background:
-    radial-gradient(circle at top right, rgba(124, 140, 255, 0.14), transparent 30%),
+    radial-gradient(circle at top right, rgba(124, 140, 255, 0.18), transparent 30%),
     linear-gradient(180deg, rgba(14,18,31,0.95), rgba(7,9,15,0.95));
-  box-shadow: var(--sl-shadow-lg);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.34), 0 0 0 1px rgba(124, 140, 255, 0.08);
 }
 
-.vespid-featured-project p { max-width: 34rem; font-size: 1.04rem; }
+.vespid-featured-project p {
+  max-width: 32rem;
+  font-size: 1.06rem;
+  line-height: 1.72;
+  color: rgba(238, 241, 255, 0.8);
+}
 .vespid-side-stack { display:grid; gap:1rem; }
-.vespid-side-card { min-height: 10.8rem; }
-.vespid-hub-grid { grid-template-columns: 1fr 1.15fr 1fr; margin-top: 1.5rem; }
-.vespid-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1.25rem; }
-.vespid-project-card { min-height: 12rem; }
+.vespid-side-card {
+  min-height: 11.6rem;
+  background: rgba(11, 14, 22, 0.52);
+  box-shadow: none;
+}
+.vespid-hub-grid { grid-template-columns: 1fr 1.15fr 1fr; margin-top: 1.7rem; }
+.vespid-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1.5rem; gap: 1.15rem; }
+.vespid-project-card {
+  min-height: 12.6rem;
+  background: rgba(10, 13, 21, 0.5);
+  box-shadow: none;
+}
 .vespid-project-card h3 a { color: inherit; text-decoration: none; }
 .vespid-project-card h3 a:hover { text-decoration: underline; text-decoration-color: rgba(124, 140, 255, 0.7); }
 .vespid-project-topline,
@@ -204,11 +260,11 @@ body {
 .vespid-project-card p { margin: 0.7rem 0 0; }
 .vespid-project-card .vespid-feature-list { margin-top: 1rem; }
 .vespid-project-footer {
-  margin-top: 1rem;
+  margin-top: 1.15rem;
   padding-top: 0.95rem;
   border-top: 1px solid var(--sl-color-hairline);
   font-size: 0.88rem;
-  color: var(--sl-color-text);
+  color: rgba(212, 216, 228, 0.68);
 }
 .vespid-project-footer a { color: var(--sl-color-text-accent); text-decoration: none; }
 .vespid-project-footer a:hover { text-decoration: underline; }
@@ -227,8 +283,12 @@ body {
 .vespid-status-pill--blue { background: rgba(59, 130, 246, 0.12); color: #bfdbfe; border-color: rgba(59, 130, 246, 0.24); }
 .vespid-status-pill--amber { background: rgba(245, 158, 11, 0.12); color: #fde68a; border-color: rgba(245, 158, 11, 0.24); }
 .vespid-status-pill--purple { background: rgba(168, 85, 247, 0.12); color: #ddd6fe; border-color: rgba(168, 85, 247, 0.24); }
-.vespid-hub-card { min-height: 13rem; }
-.vespid-hub-card--tall { min-height: 16rem; background: radial-gradient(circle at top, rgba(0,168,255,0.12), transparent 28%), rgba(9, 12, 18, 0.78); }
+.vespid-hub-card {
+  min-height: 13rem;
+  background: rgba(11, 14, 22, 0.42);
+  box-shadow: none;
+}
+.vespid-hub-card--tall { min-height: 16rem; background: radial-gradient(circle at top, rgba(0,168,255,0.09), transparent 28%), rgba(10, 13, 21, 0.56); }
 .vespid-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .vespid-strip strong { display:block; margin-bottom:0.3rem; color: var(--sl-color-text-accent); font-family: var(--__sl-font-mono); font-size:0.8rem; }
 .vespid-strip span { display:block; font-weight:700; margin-bottom:0.35rem; }
@@ -236,8 +296,8 @@ body {
 
 .vespid-meta {
   display:inline-flex; align-items:center; gap:0.5rem; border-radius:999px; padding:0.32rem 0.72rem;
-  background: rgba(124,140,255,0.12); color:#dce2ff; font-family: var(--__sl-font-mono);
-  font-size:0.76rem; letter-spacing:0.04em; text-transform:uppercase;
+  background: rgba(124,140,255,0.09); color:rgba(220, 226, 255, 0.78); font-family: var(--__sl-font-mono);
+  font-size:0.72rem; letter-spacing:0.05em; text-transform:uppercase;
 }
 
 :root[data-theme='light'] .vespid-section,
@@ -273,11 +333,11 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   align-items: center;
   justify-content: center;
   min-height: 2.35rem;
-  padding: 0.48rem 0.9rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  color: var(--sl-color-text);
+  padding: 0.48rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: rgba(212, 216, 228, 0.72);
   text-decoration: none;
   font-size: 0.88rem;
   font-weight: 600;
@@ -292,16 +352,16 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 .vespid-topnav__link:hover,
 .vespid-topnav__github:hover {
   color: var(--sl-color-text-accent);
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
   transform: translateY(-1px);
 }
 
 .vespid-topnav__link.is-active,
 .vespid-topnav__link[aria-current='page'] {
   color: var(--sl-color-text-accent);
-  border-color: rgba(124, 140, 255, 0.34);
-  background: rgba(124, 140, 255, 0.14);
+  border-color: rgba(124, 140, 255, 0.22);
+  background: rgba(124, 140, 255, 0.08);
   box-shadow: inset 0 0 0 1px rgba(124, 140, 255, 0.12);
 }
 
@@ -318,9 +378,9 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 }
 
 .vespid-topnav__github {
-  background: rgba(124, 140, 255, 0.12);
+  background: rgba(124, 140, 255, 0.08);
   color: var(--sl-color-text-accent);
-  box-shadow: 0 10px 24px rgba(124, 140, 255, 0.14);
+  box-shadow: none;
 }
 
 .vespid-header-tools {
@@ -340,15 +400,15 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 
 :root[data-theme='light'] .vespid-topnav__link,
 :root[data-theme='light'] .vespid-topnav__github {
-  background: rgba(255, 255, 255, 0.82);
-  border-color: rgba(24, 35, 66, 0.08);
+  background: transparent;
+  border-color: transparent;
   color: #223054;
 }
 
 :root[data-theme='light'] .vespid-topnav__link:hover,
 :root[data-theme='light'] .vespid-topnav__github:hover {
   background: rgba(24, 35, 66, 0.04);
-  border-color: rgba(24, 35, 66, 0.12);
+  border-color: rgba(24, 35, 66, 0.08);
   color: #111827;
 }
 
