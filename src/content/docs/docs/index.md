@@ -3,8 +3,6 @@ title: Control Layer Docs
 description: The durable entry point for vespid.ai control layers, runtime, authorization, approvals, and field notes.
 ---
 
-# Control Layer Docs
-
 This is the durable reference spine for vespid.ai: the parts of the agent deployment stack that need to stay legible after the first demo works.
 
 The homepage frames the system from the outside: agent orchestration, deployed in the real world. The docs start one layer deeper. They explain how product surfaces, delegated authorization, runtime control, confirmation policy, and field notes fit into one deployable operating model.

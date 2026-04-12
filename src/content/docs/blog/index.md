@@ -3,8 +3,6 @@ title: Field Notes
 description: Technical essays, launch notes, and postmortems.
 ---
 
-# Field Notes
-
 This blog is not meant to be a marketing feed.
 
 It is the running log for:

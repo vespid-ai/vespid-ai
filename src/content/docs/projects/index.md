@@ -3,8 +3,6 @@ title: Project Atlas
 description: The current map of products and experiments under vespid.ai.
 ---
 
-# Project Atlas
-
 The site is structured around a simple rule: every project should have a crisp public-facing overview before it gets a deep documentation tree.
 
 ## Current lanes
