@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 const site = 'https://vespid.ai';
-const description = 'Systems, products, and field notes about turning agents into reliable operational software.';
+const description = 'Agent deployment systems: orchestration, authorization, runtime control, and field notes from shipping agents into real workflows.';
 const socialImage = `${site}/og-default.png`;
 
 export default defineConfig({
