@@ -126,14 +126,16 @@ body {
 .vespid-strip,
 .vespid-hub-grid,
 .vespid-feature-layout,
-.vespid-value-grid { display: grid; gap: 1rem; }
+.vespid-value-grid,
+.vespid-project-grid { display: grid; gap: 1rem; }
 
 .vespid-proof-bar { grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 2rem 0 3rem; }
 .vespid-proof-bar > div,
 .vespid-strip > div,
 .vespid-card,
 .vespid-hub-card,
-.vespid-side-card {
+.vespid-side-card,
+.vespid-project-card {
   padding: 1.1rem 1.15rem;
   border-radius: 22px;
   border: 1px solid var(--sl-color-hairline);
@@ -169,7 +171,8 @@ body {
 .vespid-feature-layout { grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr); margin: 3rem 0; }
 .vespid-featured-project,
 .vespid-side-card,
-.vespid-hub-card { display:block; text-decoration:none; color:inherit; }
+.vespid-hub-card,
+.vespid-project-card { display:block; text-decoration:none; color:inherit; }
 
 .vespid-featured-project {
   padding: 1.5rem;
@@ -186,6 +189,8 @@ body {
 .vespid-side-stack { display:grid; gap:1rem; }
 .vespid-side-card { min-height: 10.8rem; }
 .vespid-hub-grid { grid-template-columns: 1fr 1.15fr 1fr; margin-top: 1.5rem; }
+.vespid-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1.25rem; }
+.vespid-project-card { min-height: 12rem; }
 .vespid-hub-card { min-height: 13rem; }
 .vespid-hub-card--tall { min-height: 16rem; background: radial-gradient(circle at top, rgba(0,168,255,0.12), transparent 28%), rgba(9, 12, 18, 0.78); }
 .vespid-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -204,7 +209,8 @@ body {
 :root[data-theme='light'] .vespid-strip > div,
 :root[data-theme='light'] .vespid-card,
 :root[data-theme='light'] .vespid-hub-card,
-:root[data-theme='light'] .vespid-side-card { background: rgba(255,255,255,0.82); }
+:root[data-theme='light'] .vespid-side-card,
+:root[data-theme='light'] .vespid-project-card { background: rgba(255,255,255,0.82); }
 
 :root[data-theme='light'] .vespid-meta { background: rgba(77,102,255,0.1); color:#23336f; }
 
@@ -218,6 +224,7 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   .vespid-proof-bar,
   .vespid-feature-layout,
   .vespid-hub-grid,
+  .vespid-project-grid,
   .vespid-value-grid,
   .vespid-strip { grid-template-columns: 1fr; }
 }

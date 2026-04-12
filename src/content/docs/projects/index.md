@@ -9,9 +9,11 @@ The site is structured around a simple rule: every project should have a crisp p
 
 ## Current lanes
 
-- `vespid_voice` — orchestration, voice control, and agent-facing UX.
-- `vespid.ai site` — public shell, docs spine, and brand system.
-- Future projects can each grow from a single overview page into their own doc subtree.
+- `vespid_voice` — Android-first voice control, realtime orchestration, and agent-facing UX.
+- `SkillAuth` — delegated authorization for agent execution on login-gated platforms.
+- `hermes-profile-sync` — portable export and restore for Hermes profiles across machines.
+- `vespid` — lower-level runtime substrate for brokered execution, session state, and vault-backed control.
+- `vespid.ai site` — the public shell, docs spine, and brand system tying the repo set together.
 
 ## What each project page should answer
 
