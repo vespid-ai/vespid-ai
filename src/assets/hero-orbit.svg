@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" fill="none">
+  <defs>
+    <linearGradient id="panel" x1="126" y1="88" x2="760" y2="564" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1320" />
+      <stop offset="1" stop-color="#090B14" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(348 221) rotate(90) scale(248 321)">
+      <stop stop-color="#7C8CFF" stop-opacity="0.34" />
+      <stop offset="1" stop-color="#7C8CFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(650 402) rotate(90) scale(206 244)">
+      <stop stop-color="#00A8FF" stop-opacity="0.28" />
+      <stop offset="1" stop-color="#00A8FF" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="line" x1="232" y1="192" x2="714" y2="478" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A3B0FF" />
+      <stop offset="1" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="40" fill="url(#panel)" />
+  <rect x="54" y="54" width="852" height="612" rx="32" stroke="rgba(255,255,255,0.08)" stroke-width="2" />
+  <ellipse cx="348" cy="221" rx="230" ry="184" fill="url(#glowA)" />
+  <ellipse cx="650" cy="402" rx="190" ry="174" fill="url(#glowB)" />
+  <g opacity="0.35" stroke="rgba(255,255,255,0.08)">
+    <path d="M132 172h696" />
+    <path d="M132 260h696" />
+    <path d="M132 348h696" />
+    <path d="M132 436h696" />
+    <path d="M132 524h696" />
+    <path d="M224 112v496" />
+    <path d="M392 112v496" />
+    <path d="M560 112v496" />
+    <path d="M728 112v496" />
+  </g>
+  <g stroke="url(#line)" stroke-width="3.5" stroke-linecap="round">
+    <path d="M210 492c38-134 139-257 280-257 81 0 129 42 169 78 37 34 74 64 133 69" />
+    <path d="M248 222c69 11 106 52 141 97 49 61 98 126 235 126 56 0 98-12 141-33" opacity="0.74"/>
+  </g>
+  <g>
+    <rect x="170" y="142" width="156" height="92" rx="20" fill="rgba(11,15,24,0.78)" stroke="rgba(255,255,255,0.08)" />
+    <rect x="394" y="92" width="190" height="120" rx="24" fill="rgba(11,15,24,0.82)" stroke="rgba(124,140,255,0.18)" />
+    <rect x="604" y="272" width="176" height="112" rx="24" fill="rgba(11,15,24,0.82)" stroke="rgba(56,189,248,0.18)" />
+    <rect x="250" y="390" width="204" height="130" rx="24" fill="rgba(11,15,24,0.82)" stroke="rgba(255,255,255,0.08)" />
+  </g>
+  <g fill="#EEF1FF" font-family="Inter, Arial, sans-serif">
+    <text x="200" y="182" font-size="18" font-weight="600">projects</text>
+    <text x="200" y="208" font-size="30" font-weight="800">03 active lanes</text>
+    <text x="426" y="140" font-size="18" font-weight="600">surface</text>
+    <text x="426" y="174" font-size="42" font-weight="800">vespid.ai</text>
+    <text x="426" y="202" font-size="18" font-weight="500" fill="#B7C0DF">Product shell · docs spine · field notes</text>
+    <text x="638" y="316" font-size="18" font-weight="600">docs</text>
+    <text x="638" y="350" font-size="32" font-weight="800">operator-grade</text>
+    <text x="286" y="430" font-size="18" font-weight="600">system</text>
+    <text x="286" y="468" font-size="36" font-weight="800">humans + agents</text>
+  </g>
+  <g>
+    <circle cx="246" cy="485" r="9" fill="#7C8CFF" />
+    <circle cx="469" cy="236" r="10" fill="#EEF1FF" />
+    <circle cx="626" cy="394" r="9" fill="#00A8FF" />
+    <circle cx="784" cy="431" r="8" fill="#7C8CFF" />
+  </g>
+</svg>
