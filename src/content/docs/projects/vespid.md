@@ -1,53 +1,67 @@
 ---
 title: vespid
-description: Local execution primitives for sandboxing, brokered runtime control, and vault-backed state.
+description: Managed-agent runtime substrate for brokered sessions, sandboxes, and protected actions.
 ---
 
 # vespid
 
-`vespid` is the lower-level runtime surface in the repository set. It exposes execution primitives that other products can build on top of.
+`vespid` is the runtime substrate in the vespid-ai stack. It is where execution boundaries become real:
+local sandboxes, protected actions, brokered resource access, session state, replay, and vault-backed handling.
 
 ## Snapshot
 
 - Repo: https://github.com/vespid-ai/vespid
 - Visibility: public
-- Current stage: substrate library with exported runtime/security primitives
-- Scope: execution, storage, control boundaries, and vault-backed state handling
+- Current stage: early substrate library with real exported primitives and tests
+- Scope: execution control, session state, broker mediation, and protected runtime behavior
 
-## Current surface
+## Why this exists
 
-The codebase currently exports:
+Most agent systems are still built as orchestration loops with broad ambient authority.
+`vespid` exists to make the runtime contract explicit instead:
 
-- file event ledger
-- session store
-- daemon server
-- context materialization
-- local sandbox runtime
-- broker runtime
-- vault store
-- client SDK
+- where code executes
+- what stays inside the sandbox path
+- how protected actions cross trust boundaries
+- how state is stored, replayed, and materialized
+- how sensitive material avoids leaking into the wrong layer
 
-## Positioning
+## What is real now
 
-This is not a public brand shell or end-user product page first. It is the substrate layer for local runtime control, brokered execution, and vault-backed state handling.
+The codebase already exports a concrete runtime surface:
 
-## Current status
+- `FileEventLedger`
+- `SessionStore`
+- `createDaemonServer`
+- `materializeContext`
+- `HarnessRuntime`
+- `LocalSandboxRuntime`
+- `BrokerRuntime`
+- `VaultStore`
+- `VespidClient`
 
-The codebase is already opinionated enough to show its direction:
+Tests already exercise wake/replay behavior, protected HTTP flows, secret isolation,
+and daemon/SDK behavior as real boundary surfaces.
 
-- local sandbox runtime is present
-- brokered secret/runtime access is present
-- session and file-event primitives are present
-- there is already a client-facing SDK export surface
+## Trust boundary
 
-## Why it matters in the vespid set
+`vespid` draws a line between ordinary local execution and protected actions.
+That boundary is the point: sandbox work, broker-mediated resource access,
+and vault-backed handling should not collapse into one undifferentiated runtime.
 
-If vespid_voice is the product surface and SkillAuth is the delegation model, `vespid` is the systems layer underneath: the place where execution, storage, and control boundaries can become reusable infrastructure.
+## Why it matters in the stack
+
+If `SkillAuth` is about who may authorize an agent, `vespid` is about what that agent can safely do once execution begins.
+It is the systems layer underneath product surfaces and operator workflows.
 
 ## Next milestone
 
-Clarify the substrate into a more legible platform layer:
+1. make the runtime contract easier to understand from the outside
+2. expand boundary-verification coverage around secret isolation and protected actions
+3. document how product layers should build on top of the current primitive set
 
-1. tighten the runtime contract around brokered execution and secret access
-2. make the SDK and daemon surfaces easier to understand from the outside
-3. document how product layers should build on top of these primitives
+## Builder path
+
+- Read the repo: https://github.com/vespid-ai/vespid
+- Start with the runtime README for the current surface area
+- Treat this as infrastructure, not a polished end-user product layer

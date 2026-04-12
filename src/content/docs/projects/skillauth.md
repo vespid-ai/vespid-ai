@@ -5,40 +5,57 @@ description: Delegated authorization for agent execution against login-gated pla
 
 # SkillAuth
 
-`SkillAuth` is an open-source reference CLI and delegation toolkit for a specific problem: how agents should execute against login-gated platforms without receiving raw passwords, cookies, or long-lived session state.
+`SkillAuth` is the delegated-authorization layer in the vespid-ai stack.
+It is a reference CLI and execution model for letting agents act on real platforms without receiving raw passwords, cookies, or long-lived session state.
 
 ## Snapshot
 
 - Repo: https://github.com/vespid-ai/skillauth
 - Visibility: public
-- Current stage: reference implementation proving the execution model
-- Scope: delegated authorization for agent-driven actions on third-party platforms
+- Current stage: reference implementation proving the authorization model
+- Scope: scoped delegation for agent-driven execution on login-gated platforms
 
-## Core thesis
+## Why this exists
 
-The model is:
+Most agent integrations still fall back to one of three bad patterns:
+
+- cookie sharing
+- overly broad API keys
+- browser automation that hides the real authorization problem
+
+SkillAuth exists to prove a tighter model:
 
 `user authorization -> agent execution -> platform control`
 
-A trusted user or device authorizes narrowly scoped capability, an agent executes within that delegation, and the platform remains the final authority for business enforcement.
+## What is real now
 
-## Current status
+The current repository already demonstrates:
 
-The current v0 already demonstrates:
-
-- short-lived, scoped delegated credentials
-- draft-safe execution paths before irreversible actions
+- user/device handoff for authorization
+- short-lived delegated credentials
+- draft-safe flows before irreversible actions
 - audit separation between delegated intent and platform enforcement
-- a browser/device handoff instead of credential sharing
+- platform sovereignty over final business authorization
 
-## Why it matters in the vespid set
+## Trust boundary
 
-SkillAuth is the clearest expression of the authorization thesis behind agent-first software: agents should work with revocable capability, not borrowed human identity.
+SkillAuth makes one boundary explicit: the user can authorize a scoped capability,
+but the platform remains the final authority over business actions.
+Agents should execute with delegated capability, not borrowed human identity.
+
+## Why it matters in the stack
+
+If `vespid` defines safe runtime behavior, SkillAuth defines the authority model that decides what should be allowed to enter that runtime in the first place.
+It is the clearest expression of the authorization thesis behind vespid-ai.
 
 ## Next milestone
 
-Move from reference proof to a cleaner standard surface:
+1. make the delegated-execution surface easier for builders to understand
+2. add stronger platform-facing examples beyond the initial demo path
+3. keep architecture, threat model, and audit model tightly aligned
 
-1. tighten docs around architecture, threat model, and audit model
-2. prove more platform-facing examples beyond the initial demo commands
-3. sharpen the developer ergonomics for CLI + delegation handoff
+## Builder path
+
+- Read the repo: https://github.com/vespid-ai/skillauth
+- Start with the README, then the architecture/threat-model/audit docs
+- Use it as a reference implementation for scoped agent access, not as a drop-in universal policy engine
