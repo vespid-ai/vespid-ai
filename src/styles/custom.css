@@ -430,5 +430,25 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
     justify-content: center;
   }
   .vespid-section, .vespid-featured-project { padding:1.1rem; border-radius:20px; }
-  .vespid-proof-bar { margin-bottom: 2.2rem; }
+  .vespid-proof-bar {
+    gap: 0;
+    margin: 1.35rem 0 2.2rem;
+    padding: 0.65rem 0.85rem;
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 18px;
+    background: rgba(9, 12, 18, 0.42);
+    box-shadow: none;
+  }
+  .vespid-proof-bar > div {
+    padding: 0.72rem 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .vespid-proof-bar > div + div { border-top: 1px solid var(--sl-color-hairline); }
+  .vespid-proof-bar strong { margin-bottom: 0.18rem; font-size: 0.9rem; }
+  .vespid-proof-bar span { font-size: 0.86rem; line-height: 1.45; }
+  :root[data-theme='light'] .vespid-proof-bar { background: rgba(255,255,255,0.58); }
+  :root[data-theme='light'] .vespid-proof-bar > div { background: transparent; }
 }
