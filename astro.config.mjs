@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 const site = 'https://vespid.ai';
-const description = 'A home for projects, field notes, and operator-grade documentation.';
+const description = 'Systems, products, and field notes about turning agents into reliable operational software.';
 const socialImage = `${site}/og-default.png`;
 
 export default defineConfig({
@@ -66,7 +66,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             property: 'og:image:alt',
-            content: 'vespid.ai — operator-grade systems, documented in public.',
+            content: 'vespid.ai — agent orchestration, deployed in the real world.',
           },
         },
         {
@@ -94,7 +94,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'twitter:image:alt',
-            content: 'vespid.ai — operator-grade systems, documented in public.',
+            content: 'vespid.ai — agent orchestration, deployed in the real world.',
           },
         },
         {
