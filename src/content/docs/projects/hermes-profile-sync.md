@@ -3,8 +3,6 @@ title: hermes-profile-sync
 description: Portable profile export, sanitization, sync, and restore for Hermes Agent setups.
 ---
 
-# hermes-profile-sync
-
 `hermes-profile-sync` is the profile-portability layer in the vespid.ai stack. It is an open-source toolkit for moving a Hermes operator profile across machines without treating local agent state as one unsafe blob.
 
 ## Overview

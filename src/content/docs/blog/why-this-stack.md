@@ -3,8 +3,6 @@ title: Why this stack fits vespid.ai
 description: Why Astro carries the surface while Starlight carries the reading system.
 ---
 
-# Why this stack fits vespid.ai
-
 A public engineering site usually dies in one of two ways:
 
 - it becomes visually polished but hard to maintain

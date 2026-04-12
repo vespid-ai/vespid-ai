@@ -3,8 +3,6 @@ title: vespid
 description: Managed-agent runtime substrate for brokered sessions, sandboxes, and protected actions.
 ---
 
-# vespid
-
 `vespid` is the runtime substrate in the vespid.ai stack. It is where execution boundaries become real: local sandboxes, protected actions, brokered resource access, session state, replay, and vault-backed handling.
 
 ## Overview
