@@ -1,11 +1,11 @@
 ---
-title: Control Layer Docs
-description: The durable entry point for vespid.ai control layers, runtime, authorization, approvals, and field notes.
+title: Documentation
+description: The durable entry point for vespid.ai control layers, runtime, authorization, approvals, and technical notes.
 ---
 
 This is the durable reference spine for vespid.ai: the parts of the agent deployment stack that need to stay legible after the first demo works.
 
-The homepage frames the system from the outside: agent orchestration, deployed in the real world. The docs start one layer deeper. They explain how product surfaces, delegated authorization, runtime control, confirmation policy, and field notes fit into one deployable operating model.
+The homepage frames the system from the outside: agent orchestration, deployed in the real world. The docs start one layer deeper. They explain how product surfaces, delegated authorization, runtime control, confirmation policy, and blog posts fit into one deployable operating model.
 
 <div class="vespid-section">
   <div class="vespid-meta">Docs hub</div>
@@ -17,7 +17,7 @@ The homepage frames the system from the outside: agent orchestration, deployed i
     <a class="vespid-hub-card" href="./getting-started/">
       <div class="vespid-meta">Control layers</div>
       <h3>Start with the map</h3>
-      <p>How the site separates product lanes, durable reference material, and field notes so the stack stays navigable as it grows.</p>
+      <p>How the site separates product lanes, durable reference material, and blog posts so the stack stays navigable as it grows.</p>
     </a>
     <a class="vespid-hub-card vespid-hub-card--tall" href="/projects/vespid/">
       <div class="vespid-meta">Runtime</div>
@@ -35,7 +35,7 @@ The homepage frames the system from the outside: agent orchestration, deployed i
 ## Recommended path
 
 1. [Getting Started](./getting-started/): understand the content model and where new reference material should land.
-2. [vespid_voice](/projects/vespid-voice/): see the flagship product lane where voice orchestration, confirmations, and agent bridges meet a real interface.
+2. [vespid_voice](/projects/vespid-voice/): see the current product surface where voice orchestration, confirmations, and agent bridges meet a real interface.
 3. [vespid](/projects/vespid/): inspect the lower-level runtime substrate: sandboxing, brokered control, session storage, and vault-backed state.
 4. [SkillAuth](/projects/skillauth/): follow the authorization thesis: agents should work through revocable capability, not borrowed human identity.
 5. [Design Language](./design-language/): keep the public shell and reading system aligned as the site expands.
@@ -55,7 +55,7 @@ The homepage frames the system from the outside: agent orchestration, deployed i
     </div>
     <div>
       <strong>03</strong>
-      <span>Field notes become references</span>
+      <span>Blog posts become references</span>
       <p>When a deployment lesson survives contact with real workflows, it graduates into the durable docs spine.</p>
     </div>
   </div>
@@ -64,11 +64,11 @@ The homepage frames the system from the outside: agent orchestration, deployed i
 ## Adjacent areas
 
 - [Projects](/projects/): the active stack map: product surface, delegated authorization, runtime substrate, and portability.
-- [Field Notes](/blog/): launch notes, architecture decisions, and deployment lessons before they harden into reference pages.
+- [Blog](/blog/): launch notes, architecture decisions, and deployment lessons before they harden into reference pages.
 - [Why this stack fits vespid.ai](/blog/why-this-stack/): why Astro carries the expressive surface while Starlight carries the reading system.
 
 ## Operating rule
 
 If a page explains a reusable control layer, it belongs here.
 If it explains one product lane, it belongs under [Projects](/projects/).
-If it is still a lesson from the field, it belongs under [Field Notes](/blog/).
+If it is still a lesson from the field, it belongs under [Blog](/blog/).

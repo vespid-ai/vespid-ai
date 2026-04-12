@@ -11,7 +11,7 @@ This project uses Astro + Starlight for one reason: it gives a durable documenta
 
 - `src/content/docs/projects/` for project overviews
 - `src/content/docs/docs/` for durable reference material
-- `src/content/docs/blog/` for dated essays and field notes
+- `src/content/docs/blog/` for dated technical posts and launch notes
 
 ## Design principle
 

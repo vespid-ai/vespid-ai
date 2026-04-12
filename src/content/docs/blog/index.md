@@ -1,17 +1,17 @@
 ---
-title: Field Notes
+title: Blog
 description: Technical essays, launch notes, and deployment lessons from the vespid.ai agent stack.
 ---
 
 This blog is not meant to be a marketing feed.
 
-It is the field log for the parts of the agent deployment stack that are still being shaped in public: architecture decisions, launch notes, runtime lessons, interface tradeoffs, and mistakes worth keeping visible.
+It is the running technical log for the parts of the agent deployment stack that are still being shaped in public: architecture decisions, launch notes, runtime lessons, interface tradeoffs, and mistakes worth keeping visible.
 
 <div class="vespid-section">
-  <div class="vespid-meta">Field notes hub</div>
-  <h2>Read the notes as deployment evidence</h2>
+  <div class="vespid-meta">Blog hub</div>
+  <h2>Read the posts as technical context</h2>
   <p>
-    Projects show the active lanes. Docs explain the durable control layers. Field notes capture the pressure in between: what changed, what held up, and what should become public system knowledge.
+    Projects show the active lanes. Docs explain the durable control layers. Blog posts capture what changed, what held up, and what should become public system knowledge.
   </p>
   <div class="vespid-hub-grid">
     <a class="vespid-hub-card" href="/blog/2026-04-12-launch-notes/">
@@ -45,12 +45,12 @@ It is the field log for the parts of the agent deployment stack that are still b
     <div>
       <strong>02</strong>
       <span>Then check the docs spine</span>
-      <p>Move to <a href="/docs/">Control Layer Docs</a> when a field lesson has become reusable guidance.</p>
+      <p>Move to <a href="/docs/">Documentation</a> when a field lesson has become reusable guidance.</p>
     </div>
     <div>
       <strong>03</strong>
       <span>Return for decision history</span>
-      <p>Use field notes to understand why the public shell, docs model, and deployment stack took their current shape.</p>
+      <p>Use the blog to understand why the public shell, docs model, and deployment stack took their current shape.</p>
     </div>
   </div>
 </div>
@@ -69,7 +69,7 @@ If a note is not useful to future builders, it probably does not belong here.
 
 ## Promotion rule
 
-If a note explains a reusable control layer, it should eventually become part of [Control Layer Docs](/docs/).
+If a note explains a reusable control layer, it should eventually become part of [Documentation](/docs/).
 
 If a note explains a product lane, it should point back to [Projects](/projects/).
 

@@ -1,5 +1,5 @@
 ---
-title: Project Atlas
+title: Projects
 description: "The open-source map of the vespid.ai stack: runtime, delegated authorization, portability, and product-facing execution surfaces."
 ---
 
@@ -139,5 +139,5 @@ If you want the stack in the clearest order, read it like this:
 
 ## Adjacent reading
 
-- [Control Layer Docs](/docs/): durable reference material for runtime control, confirmation policy, and system legibility.
-- [Field Notes](/blog/): launch notes, architectural decisions, and in-progress thinking before it hardens into reference docs.
+- [Documentation](/docs/): durable reference material for runtime control, confirmation policy, and system legibility.
+- [Blog](/blog/): launch notes, architectural decisions, and in-progress thinking before it hardens into reference docs.

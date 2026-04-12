@@ -5,7 +5,7 @@ description: Voice orchestration for operator workflows, confirmations, and agen
 
 # vespid_voice
 
-`vespid_voice` is the flagship lane in the current repo set: an Android-first voice control system that routes spoken intent through realtime orchestration, confirmation policy, and agent backends.
+`vespid_voice` is the current product lane in the repo set: an Android-first voice control system that routes spoken intent through realtime orchestration, confirmation policy, and agent backends.
 
 ## Snapshot
 
