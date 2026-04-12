@@ -107,7 +107,11 @@ body {
   background: #f3f5ff;
   color: #0b1020;
 }
-.hero .action.minimal { border: 1px solid var(--sl-color-hairline); background: rgba(255,255,255,0.04); }
+.hero .action.minimal {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255,255,255,0.03);
+  color: rgba(238, 241, 255, 0.86);
+}
 
 .sl-markdown-content :where(.vespid-intro) {
   margin-top: 2rem;
@@ -116,10 +120,14 @@ body {
 }
 
 .vespid-intro > p:first-child {
-  max-width: 31rem;
-  font-size: 0.98rem;
-  line-height: 1.7;
-  color: rgba(212, 216, 228, 0.78);
+  max-width: 34rem;
+  font-size: 1rem;
+  line-height: 1.68;
+  color: rgba(212, 216, 228, 0.82);
+}
+
+.vespid-mobile-subnav {
+  display: none;
 }
 
 .vespid-pills, .vespid-feature-list {
@@ -132,12 +140,12 @@ body {
 }
 
 .vespid-pills li, .vespid-feature-list span {
-  border: 1px solid var(--sl-color-hairline);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 999px;
-  padding: 0.45rem 0.85rem;
-  background: rgba(255,255,255,0.04);
-  color: var(--sl-color-text-accent);
-  font-size: 0.84rem;
+  padding: 0.38rem 0.72rem;
+  background: rgba(255,255,255,0.025);
+  color: rgba(238, 241, 255, 0.82);
+  font-size: 0.78rem;
   letter-spacing: 0.02em;
 }
 
@@ -488,6 +496,7 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
     color: rgba(212, 216, 228, 0.88);
   }
   .vespid-mobile-subnav {
+    display: block;
     margin: 0;
   }
   .vespid-mobile-subnav a {
