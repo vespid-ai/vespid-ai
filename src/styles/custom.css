@@ -261,7 +261,7 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 }
 
 .vespid-topnav {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
@@ -270,7 +270,6 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 
 .vespid-topnav__link,
 .vespid-topnav__github {
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 2.35rem;
@@ -284,6 +283,10 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   font-weight: 600;
   letter-spacing: 0.01em;
   transition: background 150ms ease, border-color 150ms ease, color 150ms ease, transform 150ms ease, box-shadow 150ms ease;
+}
+
+.vespid-topnav__link {
+  display: inline-flex;
 }
 
 .vespid-topnav__link:hover,
@@ -363,7 +366,20 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   box-shadow: 0 0 0 3px rgba(77, 102, 255, 0.14);
 }
 
+@media (min-width: 80em) {
+  .vespid-topnav {
+    display: flex;
+  }
+}
+
 @media (max-width: 60em) {
+  .vespid-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.6rem;
+  }
+  .vespid-header-tools {
+    gap: 0.4rem;
+  }
   .vespid-proof-bar,
   .vespid-feature-layout,
   .vespid-hub-grid,
