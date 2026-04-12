@@ -1,0 +1,52 @@
+---
+import config from 'virtual:starlight/user-config';
+
+import LanguageSelect from 'virtual:starlight/components/LanguageSelect';
+import Search from 'virtual:starlight/components/Search';
+import SiteTitle from 'virtual:starlight/components/SiteTitle';
+import ThemeSelect from 'virtual:starlight/components/ThemeSelect';
+
+const shouldRenderSearch =
+  config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
+
+const pathname = Astro.url.pathname;
+const navLinks = [
+  { href: '/projects/', label: 'Projects' },
+  { href: '/docs/', label: 'Docs' },
+  { href: '/blog/', label: 'Field Notes' },
+  { href: '/projects/vespid-voice/', label: 'Flagship' },
+];
+
+const isActive = (href) => {
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(href);
+};
+---
+
+<div class="header vespid-header">
+  <div class="title-wrapper sl-flex">
+    <SiteTitle />
+  </div>
+
+  <nav class="vespid-topnav sl-hidden xl:sl-flex print:hidden" aria-label="Primary">
+    {navLinks.map((link) => (
+      <a href={link.href} class:list={{ 'vespid-topnav__link': true, 'is-active': isActive(link.href) }}>
+        {link.label}
+      </a>
+    ))}
+  </nav>
+
+  <div class="vespid-header-tools sl-flex print:hidden">
+    {shouldRenderSearch && <div class="sl-hidden 2xl:sl-flex vespid-header-search"><Search /></div>}
+    <a
+      class="vespid-topnav__github sl-hidden lg:sl-inline-flex"
+      href="https://github.com/mangaohua/vespid-ai"
+      target="_blank"
+      rel="noreferrer"
+    >
+      GitHub
+    </a>
+    <ThemeSelect />
+    <LanguageSelect />
+  </div>
+</div>

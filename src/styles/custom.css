@@ -252,9 +252,84 @@ body {
 
 .site-title { font-weight:700; letter-spacing:-0.03em; }
 header.header, header.site-header { backdrop-filter: blur(20px); }
+
+.vespid-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vespid-topnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.vespid-topnav__link,
+.vespid-topnav__github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.35rem;
+  padding: 0.48rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--sl-color-text);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background 150ms ease, border-color 150ms ease, color 150ms ease, transform 150ms ease;
+}
+
+.vespid-topnav__link:hover,
+.vespid-topnav__github:hover,
+.vespid-topnav__link.is-active {
+  color: var(--sl-color-text-accent);
+  border-color: rgba(124, 140, 255, 0.3);
+  background: rgba(124, 140, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.vespid-topnav__github {
+  background: rgba(124, 140, 255, 0.12);
+  color: var(--sl-color-text-accent);
+  box-shadow: 0 10px 24px rgba(124, 140, 255, 0.14);
+}
+
+.vespid-header-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.vespid-header-search {
+  min-width: min(22rem, 30vw);
+}
+
 .card { border-radius:22px; }
 .pagination-links a, .right-sidebar a, .sidebar-pane a { border-radius:12px; }
 .expressive-code, .astro-code { border-radius:18px !important; border:1px solid var(--sl-color-hairline) !important; }
+
+:root[data-theme='light'] .vespid-topnav__link,
+:root[data-theme='light'] .vespid-topnav__github {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(24, 35, 66, 0.08);
+  color: #223054;
+}
+
+:root[data-theme='light'] .vespid-topnav__link:hover,
+:root[data-theme='light'] .vespid-topnav__github:hover,
+:root[data-theme='light'] .vespid-topnav__link.is-active {
+  background: rgba(77, 102, 255, 0.1);
+  border-color: rgba(77, 102, 255, 0.22);
+  color: #111827;
+}
 
 @media (max-width: 60em) {
   .vespid-proof-bar,

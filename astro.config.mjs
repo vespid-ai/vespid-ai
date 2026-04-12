@@ -13,6 +13,9 @@ export default defineConfig({
       title: 'vespid.ai',
       description,
       customCss: ['./src/styles/custom.css'],
+      components: {
+        Header: './src/components/Header.astro',
+      },
       favicon: '/favicon.svg',
       head: [
         {
