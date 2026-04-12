@@ -5,28 +5,38 @@ description: Voice orchestration for operator workflows, confirmations, and agen
 
 # vespid_voice
 
-`vespid_voice` is the strongest early candidate for a flagship project page because it already combines multiple themes that fit the vespid.ai brand:
+`vespid_voice` is the flagship lane in the current repo set: an Android-first voice control system that routes spoken intent through realtime orchestration, confirmation policy, and agent backends.
 
-- human-to-agent interfaces
-- structured confirmations and risk policy
-- real-time orchestration
-- operational polish over demo theatrics
+## Snapshot
 
-## Positioning
+- Surface: Android voice product with orchestrator + agent bridge
+- Repo visibility: private implementation repo
+- Current emphasis: user usability and runtime stability over demo theatrics
+- Product angle: reliable spoken control for operator workflows
 
-This is not just a voice wrapper. It is an operator layer for routing spoken intent into reliable agent actions.
+## Current status
 
-## Why it belongs on the homepage
+The live path already covers a meaningful end-to-end loop:
 
-- It demonstrates technical depth.
-- It benefits from architecture documentation.
-- It pairs well with field-note style blog writing.
-- It has a clear story: voice, control, safety, orchestration.
+- Android joins a realtime voice session
+- Volc handles ASR, VAD, interruption, subtitle events, and TTS
+- the orchestrator forwards turns into an agent backend
+- the session can run against OpenClaw or a local Codex backend
 
-## Suggested follow-up docs
+That makes this more than a concept page. It is a working product lane with verified device/runtime behavior.
 
-- architecture overview
-- bridge design notes
-- safety and confirmation policy
-- deployment guide
-- end-to-end demos
+## Why it matters
+
+- human-to-agent interface, not just text chat
+- structured confirmations and risk-aware control
+- realtime orchestration instead of static request/response wrappers
+- operational polish as a product requirement
+
+## Next milestone
+
+Push the product from "working lane" toward "consumer-stable lane":
+
+1. login/session recovery
+2. voice session recovery across network issues
+3. state sync between Android and orchestrator
+4. more durable end-to-end stability on the main user path

@@ -191,6 +191,42 @@ body {
 .vespid-hub-grid { grid-template-columns: 1fr 1.15fr 1fr; margin-top: 1.5rem; }
 .vespid-project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 1.25rem; }
 .vespid-project-card { min-height: 12rem; }
+.vespid-project-card h3 a { color: inherit; text-decoration: none; }
+.vespid-project-card h3 a:hover { text-decoration: underline; text-decoration-color: rgba(124, 140, 255, 0.7); }
+.vespid-project-topline,
+.vespid-project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+.vespid-project-topline { margin-bottom: 0.9rem; }
+.vespid-project-card p { margin: 0.7rem 0 0; }
+.vespid-project-card .vespid-feature-list { margin-top: 1rem; }
+.vespid-project-footer {
+  margin-top: 1rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--sl-color-hairline);
+  font-size: 0.88rem;
+  color: var(--sl-color-text);
+}
+.vespid-project-footer a { color: var(--sl-color-text-accent); text-decoration: none; }
+.vespid-project-footer a:hover { text-decoration: underline; }
+.vespid-status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+.vespid-status-pill--green { background: rgba(34, 197, 94, 0.12); color: #9ae6b4; border-color: rgba(34, 197, 94, 0.2); }
+.vespid-status-pill--blue { background: rgba(59, 130, 246, 0.12); color: #bfdbfe; border-color: rgba(59, 130, 246, 0.24); }
+.vespid-status-pill--amber { background: rgba(245, 158, 11, 0.12); color: #fde68a; border-color: rgba(245, 158, 11, 0.24); }
+.vespid-status-pill--purple { background: rgba(168, 85, 247, 0.12); color: #ddd6fe; border-color: rgba(168, 85, 247, 0.24); }
 .vespid-hub-card { min-height: 13rem; }
 .vespid-hub-card--tall { min-height: 16rem; background: radial-gradient(circle at top, rgba(0,168,255,0.12), transparent 28%), rgba(9, 12, 18, 0.78); }
 .vespid-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -227,6 +263,8 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   .vespid-project-grid,
   .vespid-value-grid,
   .vespid-strip { grid-template-columns: 1fr; }
+  .vespid-project-topline,
+  .vespid-project-footer { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 50em) {
