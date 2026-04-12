@@ -470,7 +470,16 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 }
 
 @media (max-width: 40em) {
-  .hero .vespid-pills li:nth-child(n + 3) {
+  .vespid-mobile-subnav a {
+    color: var(--sl-color-text);
+    text-underline-offset: 0.18rem;
+    font-weight: 500;
+    font-size: 0.78rem;
+  }
+  .vespid-mobile-subnav a:hover {
+    color: var(--sl-color-text-accent);
+  }
+  .hero .vespid-pills {
     display: none;
   }
 }
