@@ -5,7 +5,7 @@ description: Voice orchestration for operator workflows, confirmations, and agen
 
 `vespid_voice` is the clearest product surface in the current vespid.ai stack: an Android-first voice system where spoken intent, confirmation policy, realtime orchestration, and agent execution have to work in a real user loop.
 
-## Overview
+## Project overview
 
 This project exists to answer a concrete product question:
 

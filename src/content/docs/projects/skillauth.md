@@ -5,7 +5,7 @@ description: Delegated authorization for agent execution against login-gated pla
 
 `SkillAuth` is the delegated-authorization layer in the vespid.ai stack. It is a reference CLI and execution model for letting agents act on real platforms without receiving raw passwords, cookies, or long-lived session state.
 
-## Overview
+## Project overview
 
 Most agent integrations still fall back to one of three weak patterns:
 
