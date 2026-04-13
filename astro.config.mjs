@@ -22,7 +22,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'theme-color',
-            content: '#05060a',
+            content: '#f7f9fc',
           },
         },
         {
@@ -105,8 +105,8 @@ export default defineConfig({
           content: `try {
   const key = 'starlight-theme';
   if (!localStorage.getItem(key)) {
-    localStorage.setItem(key, 'dark');
-    document.documentElement.dataset.theme = 'dark';
+    localStorage.setItem(key, 'light');
+    document.documentElement.dataset.theme = 'light';
   }
 } catch {}`,
         },
