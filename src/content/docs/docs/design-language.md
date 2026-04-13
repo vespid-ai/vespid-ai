@@ -5,7 +5,7 @@ description: The visual references and editorial rules shaping vespid.ai.
 
 Design Language explains how vespid.ai should look and read: not as a clone of any one product site, but as a deliberate combination of references that fit an operator-grade systems brand.
 
-## Design goal
+## Page overview
 
 The site should feel like a current technical platform, not a generic personal site and not a concept-heavy design exercise.
 

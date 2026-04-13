@@ -5,7 +5,7 @@ description: How the vespid.ai site is organized and where new material should l
 
 Getting Started explains the content model behind vespid.ai: how homepage surfaces, project pages, documentation pages, and blog posts fit together without collapsing into one mixed stream.
 
-## Why this page exists
+## Page overview
 
 This site is not a pure docs site and not a pure marketing site.
 It needs a simple publishing model that keeps four different things legible at the same time:

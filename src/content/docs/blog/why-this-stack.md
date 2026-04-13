@@ -10,7 +10,7 @@ A public engineering site usually dies in one of two ways:
 
 Astro + Starlight is the compromise that still feels ambitious without becoming operationally fragile.
 
-## The actual site problem
+## Post overview
 
 vespid.ai is not a pure docs site and not a pure marketing site.
 It needs to do at least four jobs at once:

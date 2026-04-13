@@ -9,7 +9,7 @@ The first public version of vespid.ai was designed to optimize for three things:
 2. a docs system that will not collapse as content grows
 3. a workflow simple enough to keep publishing in public
 
-## Why this mattered
+## Post overview
 
 The hard problem was never rendering HTML. The hard problem was building a site that could keep working once projects, docs, and technical notes started accumulating.
 
