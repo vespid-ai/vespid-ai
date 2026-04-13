@@ -464,35 +464,39 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
 }
 
 @media (max-width: 50em) {
-  .hero { border-radius:24px; }
+  .hero {
+    border-radius: 24px;
+    padding: 1.2rem;
+  }
   .hero > img {
     order: 2;
-    width: min(56%, 11rem);
-    max-height: 10.5rem;
-    margin-top: 0.4rem;
+    width: min(52%, 10rem);
+    max-height: 9.75rem;
+    margin-top: 0.15rem;
     opacity: 0.9;
   }
   .hero > .stack {
     order: 1;
   }
   .hero .tagline {
-    font-size: clamp(1.34rem, 5.8vw, 1.8rem);
-    line-height: 1.08;
-    letter-spacing: -0.03em;
+    font-size: clamp(1.52rem, 6.2vw, 2rem);
+    line-height: 1.02;
+    letter-spacing: -0.035em;
     font-weight: 720;
-    max-width: 12.5rem;
+    max-width: 14rem;
     text-wrap: balance;
   }
   .hero .hero-html {
-    margin-top: 0.8rem;
+    margin-top: 0.75rem;
+    max-width: none;
   }
   .vespid-intro {
     gap: 0.6rem;
   }
   .vespid-intro > p:first-child {
-    max-width: 27ch;
-    font-size: 0.94rem;
-    line-height: 1.52;
+    max-width: 30ch;
+    font-size: 0.95rem;
+    line-height: 1.56;
     color: rgba(212, 216, 228, 0.88);
   }
   .vespid-mobile-subnav {
@@ -512,24 +516,65 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
     gap: 0.5rem;
   }
   .vespid-pills li {
-    padding: 0.38rem 0.72rem;
-    font-size: 0.78rem;
+    padding: 0.34rem 0.68rem;
+    font-size: 0.74rem;
   }
   .hero .actions {
     flex-direction: column;
-    align-items: center;
-    gap: 0.7rem;
+    align-items: stretch;
+    gap: 0.65rem;
   }
   .hero .action {
-    width: auto;
-    min-width: min(100%, 16.5rem);
+    width: 100%;
+    min-width: 0;
     padding-inline: 1rem;
     justify-content: center;
   }
-  .vespid-section, .vespid-featured-project { padding:1.1rem; border-radius:20px; }
+  .vespid-feature-layout {
+    margin: 2.15rem 0 2.8rem;
+    gap: 0.85rem;
+  }
+  .vespid-section {
+    margin: 2.9rem 0;
+    padding: 1.1rem;
+    border-radius: 20px;
+  }
+  .vespid-featured-project {
+    min-height: auto;
+    padding: 1.2rem;
+    border-radius: 20px;
+  }
+  .vespid-side-card,
+  .vespid-hub-card,
+  .vespid-project-card,
+  .vespid-strip > div,
+  .vespid-card {
+    min-height: auto;
+    padding: 0.95rem 1rem;
+    border-radius: 18px;
+  }
+  .vespid-project-grid,
+  .vespid-hub-grid,
+  .vespid-side-stack,
+  .vespid-strip {
+    gap: 0.85rem;
+  }
+  .vespid-project-card .vespid-feature-list span:nth-child(n + 3),
+  .vespid-featured-project .vespid-feature-list span:nth-child(n + 3) {
+    display: none;
+  }
+  .vespid-project-card .vespid-feature-list,
+  .vespid-featured-project .vespid-feature-list {
+    gap: 0.45rem;
+  }
+  .vespid-project-footer {
+    margin-top: 0.95rem;
+    padding-top: 0.85rem;
+    gap: 0.55rem;
+  }
   .vespid-proof-bar {
     gap: 0;
-    margin: 1.35rem 0 2.2rem;
+    margin: 1.35rem 0 2.05rem;
     padding: 0.65rem 0.85rem;
     border: 1px solid var(--sl-color-hairline);
     border-radius: 18px;
@@ -546,8 +591,41 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   .vespid-proof-bar > div + div { border-top: 1px solid var(--sl-color-hairline); }
   .vespid-proof-bar strong { margin-bottom: 0.18rem; font-size: 0.9rem; }
   .vespid-proof-bar span { font-size: 0.86rem; line-height: 1.45; }
+  .main-pane {
+    padding-inline: clamp(1rem, 4vw, 1.25rem);
+  }
+  .right-sidebar {
+    margin-top: 0.8rem;
+  }
+  .right-sidebar :where(summary) {
+    min-height: 2.75rem;
+    border-radius: 14px;
+    border: 1px solid var(--sl-color-hairline);
+    background: rgba(255, 255, 255, 0.03);
+    padding-inline: 0.9rem;
+  }
+  .right-sidebar :where(.dropdown) {
+    margin-top: 0.45rem;
+    border-radius: 16px;
+    border: 1px solid var(--sl-color-hairline);
+    background: rgba(9, 12, 18, 0.72);
+    padding: 0.45rem 0.3rem;
+  }
+  .pagination-links {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .sidebar-pane {
+    width: min(88vw, 18rem);
+  }
   :root[data-theme='light'] .vespid-proof-bar { background: rgba(255,255,255,0.58); }
   :root[data-theme='light'] .vespid-proof-bar > div { background: transparent; }
+  :root[data-theme='light'] .right-sidebar :where(summary) {
+    background: rgba(24, 35, 66, 0.03);
+  }
+  :root[data-theme='light'] .right-sidebar :where(.dropdown) {
+    background: rgba(255, 255, 255, 0.94);
+  }
 }
 
 @media (max-width: 40em) {
