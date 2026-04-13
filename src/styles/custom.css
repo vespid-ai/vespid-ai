@@ -484,6 +484,41 @@ header.header, header.site-header { backdrop-filter: blur(20px); }
   box-shadow: 0 0 0 3px rgba(77, 102, 255, 0.14);
 }
 
+:root[data-theme='light'] .sidebar-pane a {
+  color: rgba(34, 41, 57, 0.82);
+}
+:root[data-theme='light'] .sidebar-pane a:hover {
+  color: #182342;
+  background: rgba(77, 102, 255, 0.05);
+}
+:root[data-theme='light'] .right-sidebar {
+  border-left: 1px solid rgba(24, 35, 66, 0.08);
+}
+:root[data-theme='light'] .right-sidebar a {
+  color: rgba(34, 41, 57, 0.72);
+}
+:root[data-theme='light'] .right-sidebar a:hover {
+  color: #182342;
+}
+:root[data-theme='light'] .right-sidebar a[aria-current='true'] {
+  color: #182342;
+  font-weight: 600;
+}
+:root[data-theme='light'] .sl-markdown-content :not(pre) > code,
+:root[data-theme='light'] main code:not(pre code) {
+  background: rgba(77, 102, 255, 0.08);
+  color: #1f2937;
+  border: 1px solid rgba(24, 35, 66, 0.1);
+}
+:root[data-theme='light'] .pagination-links a {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(24, 35, 66, 0.12);
+  box-shadow: 0 8px 22px rgba(16, 24, 40, 0.05);
+}
+:root[data-theme='light'] .pagination-links a span:first-child {
+  color: rgba(34, 41, 57, 0.72);
+}
+
 @media (min-width: 80em) {
   .vespid-topnav {
     display: flex;
