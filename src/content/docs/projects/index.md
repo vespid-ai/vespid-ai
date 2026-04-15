@@ -39,8 +39,8 @@ The projects under vespid.ai are meant to read as one operating stack, not a bag
     <span>vespid_voice is where the stack is forced to become understandable, responsive, and operationally safe for a user.</span>
   </div>
   <div>
-    <strong>3 core systems</strong>
-    <span>Runtime control, delegated authorization, and operator portability form the support layers underneath the product surface.</span>
+    <strong>4 public systems</strong>
+    <span>Runtime control, delegated authorization, operator portability, and discovery tooling form the public support layers underneath the product surface.</span>
   </div>
   <div>
     <strong>1 public reading path</strong>
@@ -109,6 +109,23 @@ The projects under vespid.ai are meant to read as one operating stack, not a bag
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
+        <div class="vespid-meta">Discovery</div>
+        <span class="vespid-status-pill vespid-status-pill--green">Released CLI</span>
+      </div>
+      <h3><a href="/projects/geo-skill/">geo-skill</a></h3>
+      <p>Generative Engine Optimization skill pack and Python CLI for AI search, ChatGPT Search, llms.txt, and machine-readable project discovery.</p>
+      <div class="vespid-feature-list">
+        <span>AI search</span>
+        <span>llms.txt</span>
+        <span>structured data</span>
+      </div>
+      <div class="vespid-project-footer">
+        <span>The discovery/distribution layer for public site and repo legibility.</span>
+        <a href="/projects/geo-skill/">Open project</a>
+      </div>
+    </div>
+    <div class="vespid-project-card">
+      <div class="vespid-project-topline">
         <div class="vespid-meta">Public site</div>
         <span class="vespid-status-pill vespid-status-pill--green">Live shell</span>
       </div>
@@ -164,6 +181,11 @@ The projects under vespid.ai are meant to read as one operating stack, not a bag
       <strong>03</strong>
       <span>Finish with operator portability</span>
       <p>Use <a href="/projects/hermes-profile-sync/">hermes-profile-sync</a> to understand how operator state and profile movement fit into the trust model.</p>
+    </div>
+    <div>
+      <strong>04</strong>
+      <span>Then improve discovery</span>
+      <p>Open <a href="/projects/geo-skill/">geo-skill</a> if you care about how the public stack gets found, cited, and distributed across AI-search surfaces.</p>
     </div>
   </div>
 </div>
