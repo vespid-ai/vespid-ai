@@ -1,73 +1,75 @@
 ---
 title: Documentation
-description: The durable entry point for vespid.ai control layers, runtime, authorization, approvals, and technical notes.
+description: Durable GEO reference material for AI search, llms.txt, machine-readable public surfaces, and publishing rules.
 ---
 
-Documentation is the durable reference layer for vespid.ai: the parts of the stack that should stay legible after launch notes and one-off implementation choices stop being enough.
+Documentation is the durable GEO reference layer for vespid.ai: the parts of the work that should stay true after launch notes and one-off experiments stop being enough.
 
 <div class="vespid-feature-layout">
   <a class="vespid-featured-project" href="./getting-started/">
     <div class="vespid-meta">Featured guide</div>
-    <h2>Getting Started</h2>
+    <h2>GEO quickstart</h2>
     <p>
-      The fastest way to understand how this site is organized: where project pages belong, what should graduate into docs, and how the public reading system is meant to scale.
+      Start here if you need the shortest path to the GEO surface model: what to inspect first,
+      which artifacts matter, and how to publish improvements without guessing.
     </p>
     <div class="vespid-feature-list">
-      <span>content model</span>
-      <span>reading system</span>
+      <span>audit first</span>
+      <span>artifact model</span>
       <span>publishing path</span>
     </div>
   </a>
   <div class="vespid-side-stack">
-    <a class="vespid-side-card" href="/projects/">
-      <div class="vespid-meta">Projects</div>
-      <h3>See the live system first</h3>
-      <p>Use the project hub when you need the current product surface, runtime layer, delegated auth model, or portability work behind a doc page.</p>
+    <a class="vespid-side-card" href="/projects/geo-skill/">
+      <div class="vespid-meta">Project</div>
+      <h3>See the runnable toolchain</h3>
+      <p>Use the project page when you want the current repo, release, and scope summary behind the documentation.</p>
     </a>
     <a class="vespid-side-card" href="/blog/">
       <div class="vespid-meta">Blog</div>
-      <h3>Read the unstable technical context</h3>
-      <p>Use the blog for launch notes, architecture rationale, and deployment pressure that has not yet resolved into stable guidance.</p>
+      <h3>Read the unstable context</h3>
+      <p>Use the blog for rationale and field pressure that has not yet hardened into stable guidance.</p>
     </a>
   </div>
 </div>
 
 <div class="vespid-proof-bar">
   <div>
-    <strong>2 live reference pages</strong>
-    <span>The docs are intentionally small so every page carries reusable guidance instead of generic AI explanation.</span>
+    <strong>3 reference pages</strong>
+    <span>The docs stay intentionally small so every page carries reusable GEO guidance instead of generic AI-search commentary.</span>
   </div>
   <div>
     <strong>1 job</strong>
-    <span>Capture the stable operating model behind runtime control, delegated access, approval boundaries, and public system legibility.</span>
+    <span>Capture the durable model for machine-readable public surfaces, GEO artifacts, and publishing decisions.</span>
   </div>
   <div>
     <strong>2 adjacent hubs</strong>
-    <span>Projects show the running system. Blog posts explain changing context. Documentation keeps the durable model in the middle.</span>
+    <span>Projects show the current toolchain. Blog posts explain why the model changed. Docs keep the stable guidance in the middle.</span>
   </div>
 </div>
 
 <div class="vespid-section">
   <div class="vespid-meta">Core references</div>
-  <h2>The current documentation spine</h2>
+  <h2>The current GEO documentation spine</h2>
   <p>
-    These pages explain the parts of the stack that should survive beyond individual launches: how content is organized, how the site reads, and how control layers stay understandable as the system grows.
+    These pages explain what should stay stable as the site and toolchain evolve: how to start,
+    how to model the public surface, and where support conversations should happen.
   </p>
   <div class="vespid-hub-grid">
     <a class="vespid-hub-card" href="./getting-started/">
-      <div class="vespid-meta">Getting started</div>
-      <h3>Understand the structure</h3>
-      <p>Learn where project pages, docs pages, and blog posts belong so the site stays coherent as new material is added.</p>
+      <div class="vespid-meta">Quickstart</div>
+      <h3>Start with the workflow</h3>
+      <p>Understand audit-first GEO, the minimum artifact set, and how to avoid random surface edits.</p>
     </a>
     <a class="vespid-hub-card vespid-hub-card--tall" href="./design-language/">
-      <div class="vespid-meta">Design language</div>
-      <h3>Keep the public shell consistent</h3>
-      <p>Use the design language page to keep layout, voice, and interface decisions aligned as the site evolves.</p>
+      <div class="vespid-meta">Surface model</div>
+      <h3>Design pages that AI search can read</h3>
+      <p>Use the surface-model page to keep homepage, docs, repo, metadata, and machine-readable artifacts aligned.</p>
     </a>
-    <a class="vespid-hub-card" href="/projects/vespid/">
-      <div class="vespid-meta">Runtime context</div>
-      <h3>Connect docs back to the stack</h3>
-      <p>Jump into vespid and SkillAuth when a reference page depends on concrete runtime or authorization mechanics.</p>
+    <a class="vespid-hub-card" href="./support/">
+      <div class="vespid-meta">Support</div>
+      <h3>Know where to ask for help</h3>
+      <p>Use the support page for contribution, sponsorship, and scoped GEO-work conversations.</p>
     </a>
   </div>
 </div>
@@ -79,64 +81,56 @@ Documentation is the durable reference layer for vespid.ai: the parts of the sta
   <div class="vespid-strip">
     <div>
       <strong>01</strong>
-      <span>Start with the content model</span>
-      <p>Read <a href="./getting-started/">Getting Started</a> first to understand where stable reference material should live.</p>
+      <span>Start with GEO quickstart</span>
+      <p>Read <a href="./getting-started/">GEO quickstart</a> first for the smallest useful workflow.</p>
     </div>
     <div>
       <strong>02</strong>
-      <span>Then align the public shell</span>
-      <p>Use <a href="./design-language/">Design Language</a> to keep the site readable, consistent, and recognizably part of one system.</p>
+      <span>Then align the surface model</span>
+      <p>Use <a href="./design-language/">GEO surface model</a> to make sure the site, repo, and artifacts reinforce the same URLs.</p>
     </div>
     <div>
       <strong>03</strong>
-      <span>Jump back to projects when needed</span>
-      <p>Move to <a href="/projects/">Projects</a> whenever a doc page needs current runtime, product, or authorization context.</p>
+      <span>Return to the project when needed</span>
+      <p>Move back to <a href="/projects/geo-skill/">geo-skill</a> whenever you need the runnable toolchain behind the guidance.</p>
     </div>
   </div>
 </div>
 
 <div class="vespid-section">
-  <div class="vespid-meta">Operating model</div>
+  <div class="vespid-meta">Operating rules</div>
   <div class="vespid-project-grid">
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Principle</div>
-        <span class="vespid-status-pill vespid-status-pill--green">Stable rule</span>
+        <div class="vespid-meta">Rule</div>
+        <span class="vespid-status-pill vespid-status-pill--green">Stable</span>
       </div>
-      <h3>Control before autonomy</h3>
-      <p>Every useful agent loop needs explicit ownership of capability, confirmation boundaries, and rollback paths.</p>
+      <h3>Audit before editing</h3>
+      <p>Good GEO work starts from an explicit reading of the current public surface, not from random copy rewrites.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Principle</div>
-        <span class="vespid-status-pill vespid-status-pill--blue">Stable rule</span>
+        <div class="vespid-meta">Rule</div>
+        <span class="vespid-status-pill vespid-status-pill--blue">Stable</span>
       </div>
-      <h3>Runtime is product surface</h3>
-      <p>Session state, execution routing, sandboxing, and recovery behavior are part of the user experience, not hidden implementation detail.</p>
+      <h3>Artifacts support pages</h3>
+      <p>`llms.txt`, schema, sitemaps, and repo metadata should reinforce the page model instead of contradicting it.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Principle</div>
-        <span class="vespid-status-pill vespid-status-pill--amber">Editorial rule</span>
+        <div class="vespid-meta">Rule</div>
+        <span class="vespid-status-pill vespid-status-pill--amber">Stable</span>
       </div>
-      <h3>Blog posts become references</h3>
-      <p>When a deployment lesson survives contact with real workflows, it should graduate from the blog into documentation.</p>
+      <h3>Compare before claiming improvement</h3>
+      <p>Before/after comparison matters more than intuition when you change machine-readable GEO surfaces.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Principle</div>
-        <span class="vespid-status-pill vespid-status-pill--purple">Navigation rule</span>
+        <div class="vespid-meta">Rule</div>
+        <span class="vespid-status-pill vespid-status-pill--purple">Stable</span>
       </div>
-      <h3>Projects keep docs grounded</h3>
-      <p>Reference pages should stay abstract enough to reuse, but always point back to the running systems they describe.</p>
+      <h3>Keep one public story</h3>
+      <p>Website, repository, release notes, and docs should describe the same project and the same GEO narrative.</p>
     </div>
   </div>
 </div>
-
-## Publishing rule
-
-If a page explains a reusable control layer, it belongs here.
-
-If it explains one product lane, it belongs under [Projects](/projects/).
-
-If it is still a lesson from the field, it belongs under [Blog](/blog/).

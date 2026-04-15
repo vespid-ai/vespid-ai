@@ -1,84 +1,60 @@
 ---
-title: Why this stack fits vespid.ai
-description: Why Astro carries the surface while Starlight carries the reading system.
+title: What AI-native search can actually read
+description: Why GEO depends on page structure, public artifacts, and machine-readable surfaces instead of marketing copy alone.
 ---
 
-A public engineering site usually dies in one of two ways:
+A lot of GEO discussion still collapses into writing advice.
 
-- it becomes visually polished but hard to maintain
-- it becomes easy to maintain but too generic to carry a real technical identity
+Write clearer copy.
+Add schema.
+Publish `llms.txt`.
 
-Astro + Starlight is the compromise that still feels ambitious without becoming operationally fragile.
+None of that is wrong. It is just incomplete.
 
-## Post overview
+## What AI-native search is really reading
 
-vespid.ai is not a pure docs site and not a pure marketing site.
-It needs to do at least four jobs at once:
+When a retrieval system decides what to extract or cite, it is not only reading your headline. It is also reading the shape of the public surface:
 
-- present a stronger public platform surface
-- explain live projects as one stack
-- hold durable documentation
-- publish engineering notes without collapsing navigation
+- which pages exist
+- which pages are linked prominently
+- whether page roles are obvious
+- whether metadata and visible copy agree
+- whether the repository and website reinforce the same story
+- whether machine-readable artifacts point toward the right URLs
 
-A single tool optimized only for docs or only for landing pages would have forced the wrong tradeoff too early.
+That means GEO is partly editorial, but it is also systems work.
 
-## What Astro handles well
+## The weak pattern
 
-Astro gives the site freedom where freedom actually matters:
+A weak GEO surface usually looks like this:
 
-- homepage composition
-- custom landing pages
-- visual differentiation between sections
-- future product-surface storytelling
-- tighter control over branded presentation
+- the homepage is broad and generic
+- the docs are disconnected from the core product or project pages
+- the repository description says one thing while the site says another
+- `llms.txt` exists but points at a fuzzy page map
+- the blog contains important facts that should have been stable pages
 
-This is what lets the site avoid feeling like a generic documentation skin.
+From the outside, that feels like a normal messy website.
+From the perspective of AI-native search, it is a poor extraction target.
 
-## What Starlight handles well
+## The stronger pattern
 
-Starlight gives the site discipline where discipline matters more than freedom:
+A stronger GEO surface is simpler:
 
-- navigation
-- content organization
-- search
-- code-friendly reading
-- the boring mechanics that should stay boring
+1. one clear homepage statement
+2. one obvious project or product center
+3. docs that hold stable instructions and definitions
+4. blog posts that carry rationale instead of core facts
+5. repo metadata, releases, and machine-readable artifacts reinforcing the same URLs
 
-That matters because once the site starts accumulating pages, the real challenge becomes legibility, not expressiveness.
+This is why the vespid.ai public surface was narrowed. Not because a narrow site is always better, but because clear extraction paths matter more than public breadth when AI search is part of the audience.
 
-## Why the split is useful
+## Practical rule
 
-The important point is not just that Astro and Starlight are both good tools. The important point is that they divide the problem correctly.
-
-- Astro controls the surface
-- Starlight controls the reading system
-
-That means the site can evolve its platform/homepage identity without rebuilding the structural parts every time the narrative sharpens.
-
-## Why this is better than a full custom build right now
-
-A full custom build would give more control, but it would also demand more editorial and navigation maintenance from day one.
-
-At the current stage, the better move is to keep:
-
-- custom effort focused on the public surface
-- structural effort delegated to a boring, proven reading system
-- writing effort directed toward actual pages instead of infrastructure churn
-
-That is a better tradeoff for a growing stack site than prematurely owning every part of the frontend.
-
-## What would change this decision later
-
-This stack should keep winning until one of these becomes true:
-
-- the content model outgrows Starlight’s structure
-- the public surface needs interaction patterns that no longer fit cleanly around the docs shell
-- maintaining the split becomes more expensive than replacing it
-
-Until then, the split remains the correct default.
+If a machine has to guess what your most important page is, your GEO surface is still weak.
 
 ## Related reading
 
-- [Launch notes for the first vespid.ai shell](/blog/2026-04-12-launch-notes/): why the initial release was scoped the way it was.
-- [Documentation](/docs/): the durable reading layer this stack is meant to protect.
-- [Projects](/projects/): the stack map that depends on this site structure staying legible.
+- [Why vespid.ai now leads with GEO](/blog/2026-04-12-launch-notes/)
+- [GEO quickstart](/docs/getting-started/)
+- [GEO surface model](/docs/design-language/)

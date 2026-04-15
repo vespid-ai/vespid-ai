@@ -1,80 +1,61 @@
 ---
-title: Launch notes for the first vespid.ai shell
-description: Why Astro + Starlight won and how the first public structure was chosen.
+title: Why vespid.ai now leads with GEO
+description: Why the public site was refocused on one open GEO project instead of trying to explain multiple unrelated public stories at once.
 ---
 
-The first public version of vespid.ai was designed to optimize for three things:
+The earlier public surface tried to explain several different projects at the same time.
 
-1. a homepage that can carry a stronger platform voice
-2. a docs system that will not collapse as content grows
-3. a workflow simple enough to keep publishing in public
+That was not a branding problem. It was an information-architecture problem.
 
-## Post overview
+When the public surface tries to carry too many system stories at once, three things happen:
 
-The hard problem was never rendering HTML. The hard problem was building a site that could keep working once projects, docs, and technical notes started accumulating.
+1. the homepage stops saying one clear thing
+2. the project map becomes a mixed shelf instead of a reading path
+3. AI-native search systems have no strong signal about which pages matter most
 
-A site like this fails in one of two predictable ways:
+## Why the refocus happened
 
-- it becomes visually polished but structurally fragile
-- it becomes easy to update but too generic to carry a real product or platform story
+The clearest public lane was already `geo-skill`.
 
-The first shell had to avoid both.
+It has:
 
-## Why not build from scratch?
+- a public repository
+- tagged releases
+- a concrete CLI
+- a reusable skill pack
+- a direct relationship to website structure, repo metadata, and machine-readable artifacts
 
-Because a custom site would have optimized too early for control and too early against discipline.
+That makes it a better public center of gravity than a wider stack story where most of the interesting layers are not meant to stay public.
 
-At this stage, the site needed:
+## What changed
 
-- a flexible homepage surface
-- a durable reading system
-- automatic navigation that would not become a maintenance tax immediately
-- a writing workflow that stays boring enough to keep using
+The public site was narrowed to one story:
 
-Building everything from scratch would have increased freedom, but it would also have increased structural drift.
+- homepage now leads with GEO directly
+- projects now center on one public project, `geo-skill`
+- docs now explain the GEO workflow and surface model
+- blog posts now carry GEO rationale and field notes
+- the organization profile also points at the same project and same public thesis
 
-## Why Astro + Starlight won
+## Why this is better for GEO
 
-Astro handles the expressive surface.
-Starlight handles the reading discipline.
+Good GEO work depends on a surface that is easy to parse.
 
-That split fit the real shape of the site:
+A narrow public story helps because:
 
-- homepage and landing pages need stronger composition freedom
-- docs and long-form reading need stable navigation, search, and content structure
-- the public shell needs to feel branded without turning the entire site into custom frontend overhead
+- important URLs become obvious
+- links reinforce the same project instead of competing with each other
+- `llms.txt`, metadata, and repo surfaces can point to a simpler page model
+- AI search systems have fewer ambiguous public entities to resolve
 
-So the stack choice was not aesthetic first. It was operational first.
+## What did not change
 
-## What shipped in the first shell
+The point is not to pretend one project explains everything.
 
-The first release established:
-
-- a public homepage framing vespid.ai as a systems/platform site rather than a personal site
-- a docs spine that can hold stable references
-- a projects area for the live stack map
-- a blog path for launch notes and engineering context
-
-That was enough to make the site publishable while keeping room for the structure to harden over time.
-
-## What did not ship yet
-
-The first shell was not trying to finish everything. It intentionally left out:
-
-- a polished long-tail page system for every project detail
-- a mature editorial system for posts beyond the first notes
-- a final visual language for all second-level pages
-- the deeper product storytelling that should only come after the structure proves stable
-
-## Immediate implication
-
-The first shell should be judged less like a finished marketing site and more like a correct public substrate.
-
-If the structure holds, future polishing is cheap.
-If the structure is wrong, polish only hides the problem.
+The point is to make the public surface truthful, legible, and strong enough to support discovery. A public site should say what is actually public and actually useful, not everything that exists behind the scenes.
 
 ## Related reading
 
-- [Why this stack fits vespid.ai](/blog/why-this-stack/): the broader reasoning behind Astro + Starlight.
-- [Documentation](/docs/): the durable reference layer that this launch was designed to support.
-- [Projects](/projects/): the stack map that the first shell needed to make readable in public.
+- [geo-skill](/projects/geo-skill/): the project the public site now centers on.
+- [Documentation](/docs/): the durable GEO workflow and surface model.
+- [What AI-native search can actually read](/blog/why-this-stack/): the reasoning behind the machine-readable side of the site.

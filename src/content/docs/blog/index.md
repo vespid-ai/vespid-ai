@@ -1,33 +1,33 @@
 ---
 title: Blog
-description: Technical essays, launch notes, and deployment lessons from the vespid.ai agent stack.
+description: GEO field notes, rationale, and technical writing about AI-native search surfaces.
 ---
 
-The blog is the running technical log for vespid.ai: launch notes, architecture decisions, interface tradeoffs, and deployment lessons before they harden into documentation.
+The blog is the short public record for why the GEO model is taking its current shape and what keeps showing up in real public-surface work.
 
 <div class="vespid-feature-layout">
   <a class="vespid-featured-project" href="/blog/2026-04-12-launch-notes/">
     <div class="vespid-meta">Featured post</div>
-    <h2>Launch notes for the first vespid.ai shell</h2>
+    <h2>Why vespid.ai now leads with GEO</h2>
     <p>
-      Why the first public surface shipped the way it did: structure before polish, platform framing before personal branding, and a docs spine that can keep scaling with the stack.
+      Why the site stopped trying to tell five stories at once and now focuses its entire public surface on one open GEO project.
     </p>
     <div class="vespid-feature-list">
-      <span>launch notes</span>
+      <span>refocus</span>
       <span>public surface</span>
-      <span>site structure</span>
+      <span>GEO</span>
     </div>
   </a>
   <div class="vespid-side-stack">
-    <a class="vespid-side-card" href="/projects/">
-      <div class="vespid-meta">Projects</div>
-      <h3>Trace each note back to the stack</h3>
-      <p>Use the project hub when a post depends on a specific product lane, runtime layer, auth model, or portability concern.</p>
+    <a class="vespid-side-card" href="/projects/geo-skill/">
+      <div class="vespid-meta">Project</div>
+      <h3>Trace each post back to the toolchain</h3>
+      <p>Use the project page when a post depends on actual repo scope, releases, or workflow behavior.</p>
     </a>
     <a class="vespid-side-card" href="/docs/">
       <div class="vespid-meta">Documentation</div>
-      <h3>Read the stable reference layer</h3>
-      <p>Move from blog posts into docs when a lesson becomes reusable guidance about runtime control, approvals, or system structure.</p>
+      <h3>Move into stable guidance</h3>
+      <p>Use the docs when a field note becomes reusable GEO reference material instead of one-time rationale.</p>
     </a>
   </div>
 </div>
@@ -35,39 +35,39 @@ The blog is the running technical log for vespid.ai: launch notes, architecture 
 <div class="vespid-proof-bar">
   <div>
     <strong>2 published posts</strong>
-    <span>The blog is still small, so each post should carry actual technical context instead of filler updates.</span>
+    <span>The blog is intentionally small, so each post should carry real technical context rather than filler updates.</span>
   </div>
   <div>
     <strong>1 job</strong>
-    <span>Explain why the stack changed, what held up under deployment pressure, and what should eventually become durable reference material.</span>
+    <span>Explain why the public GEO surface changed and what AI-native search systems actually need from a site.</span>
   </div>
   <div>
     <strong>2 adjacent hubs</strong>
-    <span>Projects show the live system. Documentation keeps the stable model. The blog sits between them and records change.</span>
+    <span>Projects show the current toolchain. Docs keep the durable model. The blog records why changes happened.</span>
   </div>
 </div>
 
 <div class="vespid-section">
   <div class="vespid-meta">Recent posts</div>
-  <h2>The current engineering context</h2>
+  <h2>The current GEO context</h2>
   <p>
-    These are not marketing updates. They are the short public record for why the shell, stack, and writing system are taking their current shape.
+    These posts are the short engineering record for the public refocus: why the site narrowed to one story and how GEO surfaces should be designed for AI-native retrieval.
   </p>
   <div class="vespid-hub-grid">
     <a class="vespid-hub-card" href="/blog/2026-04-12-launch-notes/">
-      <div class="vespid-meta">Launch notes</div>
-      <h3>Why the first shell shipped this way</h3>
-      <p>The first public surface optimizes for durable navigation, technical clarity, and a structure that can grow with the system.</p>
+      <div class="vespid-meta">Refocus</div>
+      <h3>Why the site now leads with GEO</h3>
+      <p>How one public project became a stronger story than a scattered multi-project shell.</p>
     </a>
     <a class="vespid-hub-card vespid-hub-card--tall" href="/blog/why-this-stack/">
-      <div class="vespid-meta">Stack choice</div>
-      <h3>Why Astro and Starlight fit this site</h3>
-      <p>Why the expressive surface lives in Astro while the reference spine stays inside Starlight’s reading system.</p>
+      <div class="vespid-meta">Surface model</div>
+      <h3>What AI-native search can actually read</h3>
+      <p>Why machine-readable structure matters more than generic marketing copy once LLM retrieval is in the loop.</p>
     </a>
-    <a class="vespid-hub-card" href="/projects/">
-      <div class="vespid-meta">Project context</div>
-      <h3>Follow the live deployment lanes</h3>
-      <p>Use the project hub to connect each post back to the product surface, runtime substrate, auth model, or portability layer it affects.</p>
+    <a class="vespid-hub-card" href="/docs/">
+      <div class="vespid-meta">Reference</div>
+      <h3>Move from notes to rules</h3>
+      <p>Use the docs when a lesson becomes durable enough to guide future GEO work.</p>
     </a>
   </div>
 </div>
@@ -75,72 +75,22 @@ The blog is the running technical log for vespid.ai: launch notes, architecture 
 ## How to use this blog
 
 <div class="vespid-section">
-  <div class="vespid-meta">Reading paths</div>
+  <div class="vespid-meta">Reading path</div>
   <div class="vespid-strip">
     <div>
       <strong>01</strong>
-      <span>Start with projects when you need system context</span>
-      <p>Open <a href="/projects/">Projects</a> first if a post depends on a specific lane or platform layer.</p>
+      <span>Start with the project when you need scope</span>
+      <p>Open <a href="/projects/geo-skill/">geo-skill</a> first if a post depends on actual CLI, releases, or repo behavior.</p>
     </div>
     <div>
       <strong>02</strong>
       <span>Move to docs when the lesson stabilizes</span>
-      <p>Use <a href="/docs/">Documentation</a> when a post becomes reusable guidance instead of a point-in-time decision log.</p>
+      <p>Use <a href="/docs/">Documentation</a> when a post becomes reusable GEO guidance instead of historical context.</p>
     </div>
     <div>
       <strong>03</strong>
-      <span>Come here for rationale and pressure</span>
-      <p>The blog should explain why choices were made, what tradeoffs appeared, and what changed under real deployment pressure.</p>
+      <span>Come here for rationale</span>
+      <p>The blog should explain why choices were made, what tradeoffs appeared, and what changed in the public surface.</p>
     </div>
   </div>
 </div>
-
-<div class="vespid-section">
-  <div class="vespid-meta">Editorial rule</div>
-  <h2>What belongs here</h2>
-  <p>
-    A post belongs on the blog when it is still carrying decision history, technical context, or deployment pressure that has not yet resolved into a stable reference page.
-  </p>
-  <div class="vespid-project-grid">
-    <div class="vespid-project-card">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Good fit</div>
-        <span class="vespid-status-pill vespid-status-pill--green">Keep here</span>
-      </div>
-      <h3>Launch notes and architecture writeups</h3>
-      <p>Posts explaining why a release, structural change, or system direction happened the way it did.</p>
-    </div>
-    <div class="vespid-project-card">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Good fit</div>
-        <span class="vespid-status-pill vespid-status-pill--blue">Keep here</span>
-      </div>
-      <h3>Tradeoffs, mistakes, and field lessons</h3>
-      <p>Posts that preserve failure modes, pressure points, and interface or runtime lessons worth remembering in public.</p>
-    </div>
-    <div class="vespid-project-card">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Promote later</div>
-        <span class="vespid-status-pill vespid-status-pill--amber">Move to docs</span>
-      </div>
-      <h3>Reusable control-layer guidance</h3>
-      <p>When a post becomes stable operational guidance, it should graduate into <a href="/docs/">Documentation</a>.</p>
-    </div>
-    <div class="vespid-project-card">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Point back</div>
-        <span class="vespid-status-pill vespid-status-pill--purple">Link to projects</span>
-      </div>
-      <h3>Project-specific updates</h3>
-      <p>If a post is mainly about one product lane, it should clearly point back to the relevant page in <a href="/projects/">Projects</a>.</p>
-    </div>
-  </div>
-</div>
-
-## Promotion rule
-
-If a note explains a reusable control layer, it should eventually become part of [Documentation](/docs/).
-
-If a note explains a product lane, it should point back to [Projects](/projects/).
-
-If a note preserves deployment pressure, tradeoffs, or failure modes, it belongs here until the lesson is stable enough to graduate.

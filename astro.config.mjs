@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 const site = 'https://vespid.ai';
-const description = 'Agent deployment systems: orchestration, authorization, runtime control, and field notes from shipping agents into real workflows.';
+const description = 'Generative Engine Optimization for AI search, ChatGPT Search, llms.txt, and machine-readable public surfaces.';
 const socialImage = `${site}/og-default.png`;
 
 export default defineConfig({
@@ -69,7 +69,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             property: 'og:image:alt',
-            content: 'vespid.ai — agent orchestration, deployed in the real world.',
+            content: 'vespid.ai — Generative Engine Optimization for AI-native search.',
           },
         },
         {
@@ -97,7 +97,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'twitter:image:alt',
-            content: 'vespid.ai — agent orchestration, deployed in the real world.',
+            content: 'vespid.ai — Generative Engine Optimization for AI-native search.',
           },
         },
         {

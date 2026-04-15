@@ -1,78 +1,58 @@
 ---
-title: Design Language
-description: The visual references and editorial rules shaping vespid.ai.
+title: GEO surface model
+description: How homepage, docs, repository, metadata, and machine-readable artifacts should reinforce the same GEO story.
 ---
 
-Design Language explains how vespid.ai should look and read: not as a clone of any one product site, but as a deliberate combination of references that fit an operator-grade systems brand.
+The GEO surface model is the rule that keeps public discoverability work coherent.
 
-## Page overview
+## The public surface is one system
 
-The site should feel like a current technical platform, not a generic personal site and not a concept-heavy design exercise.
+A site is not just the homepage. A discoverable public system usually includes:
 
-That means the visual language needs to balance three things:
+- homepage
+- project or product detail pages
+- documentation hubs and key reference pages
+- blog or changelog pages
+- repository README, description, topics, homepage link, and releases
+- machine-readable artifacts such as `llms.txt`, sitemap, and structured data
 
-- enough confidence to carry a product/platform story
-- enough discipline to keep documentation readable
-- enough restraint that the copy and structure still do the real work
+If those layers disagree, AI-native search systems see a fuzzy story.
 
-## Structural shell — Linear
+## Page-role hierarchy
 
-Linear remains the best reference for the operator-grade dark shell:
+### 1. Homepage
+The homepage should state what the project is in one sentence and route people and machines to the right deeper pages.
 
-- precise spacing
-- calm hierarchy
-- sharp cards
-- limited accent palette
-- navigation that feels controlled instead of decorative
+### 2. Project page
+The project page should answer scope, status, why it exists, what is already real, and where to go next.
 
-This is the reference for the structural discipline of the site, not for copying exact UI details.
+### 3. Documentation
+Docs should carry the durable reference layer: workflows, rules, and stable explanations that do not depend on one launch moment.
 
-## Showcase energy — Framer
+### 4. Blog or changelog
+Blog posts should explain rationale, tradeoffs, and field pressure. They should not become the only place where key facts live.
 
-Framer is the reference for the public-facing hero experience:
+### 5. Repository surface
+GitHub description, README, homepage link, releases, and tags must reinforce the same URLs and same story as the site.
 
-- larger display type
-- stronger first-screen confidence
-- product-first storytelling
-- visual momentum without losing clarity
+## Machine-readable artifacts
 
-This is the reference for when a page needs energy, emphasis, or stronger platform presence.
+### `llms.txt`
+Use it to highlight the URLs and resources that matter most. It should reflect the real page model, not a speculative sitemap.
 
-## Reading ergonomics — Mintlify
+### Structured data
+Use schema when it clarifies page role, project identity, releases, or organization facts. Do not add markup that the page itself does not support.
 
-Mintlify is the reference for the documentation layer:
+### Sitemap and robots
+Make sure important pages are crawlable, canonical, and easy to discover.
 
-- easier scanability
-- clean card groupings
-- calmer long-form reading rhythm
-- page structure that helps readers understand where to start
+## Editorial rule
 
-This is the reference for how the docs, project hubs, and blog hubs should guide reading instead of merely presenting content.
+A GEO surface is healthy when:
 
-## Practical implication
+- the most important pages are obvious
+- the same facts repeat consistently across visible copy and metadata
+- machine-readable artifacts reinforce the same URL hierarchy
+- repo and site surfaces point to each other cleanly
 
-vespid.ai should feel premium and current, but the copy must still carry the page.
-Effects support the content; they do not replace it.
-
-So in practice:
-
-- use stronger hero treatment on landing and hub pages
-- keep detail pages cleaner and more text-led
-- prefer clear spacing and hierarchy over decorative motion
-- use cards and labels to clarify structure, not to add noise
-
-## Editorial implication
-
-Visual language and information architecture should stay aligned.
-
-If a page is a stable model, it should read like documentation.
-If it is a project surface, it should read like a platform page.
-If it is a post, it should read like engineering context.
-
-The design system works only if the page type is obvious within a few seconds.
-
-## Related reading
-
-- [Getting Started](./getting-started/): where each kind of page belongs.
-- [Documentation](/docs/): the broader documentation hub.
-- [Blog](/blog/why-this-stack/): the rationale behind the current site stack and public shell choices.
+If any of those fail, AI search usually gets noisier instead of better.

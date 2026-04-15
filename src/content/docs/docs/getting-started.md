@@ -1,66 +1,52 @@
 ---
-title: Getting Started
-description: How the vespid.ai site is organized and where new material should live.
+title: GEO quickstart
+description: The shortest practical path to auditing, generating, and publishing AI-search-friendly public surfaces.
 ---
 
-Getting Started explains the content model behind vespid.ai: how homepage surfaces, project pages, documentation pages, and blog posts fit together without collapsing into one mixed stream.
+GEO quickstart is the smallest useful workflow for improving how a public site or repository shows up in AI-native search.
 
-## Page overview
+## What to inspect first
 
-This site is not a pure docs site and not a pure marketing site.
-It needs a simple publishing model that keeps four different things legible at the same time:
+Start with the public surface as it already exists:
 
-- a platform-style homepage
-- project pages for the live stack
-- documentation for durable reference material
-- blog posts for rationale, launch notes, and deployment pressure
+1. homepage and core landing pages
+2. product or project detail pages
+3. docs hub and key reference pages
+4. repository README, description, homepage, and releases
+5. `robots.txt`, sitemap, `llms.txt`, and structured data candidates
 
-If those content types are not separated clearly, the site becomes harder to navigate every time a new page is added.
+Do not start by adding random GEO artifacts. Start by checking whether the current public story is already clear.
 
-## Content model
+## Minimum useful workflow
 
-Use these directories as the first rule of placement:
+1. audit the current surface with `geo-skill`
+2. identify missing or contradictory public facts
+3. generate or repair the machine-readable artifacts that reinforce the right URLs
+4. update the human-readable pages so the same story appears in visible copy and metadata
+5. compare before/after reports instead of assuming the change helped
 
-- `src/content/docs/projects/` for project overviews and project detail pages
-- `src/content/docs/docs/` for durable reference material
-- `src/content/docs/blog/` for dated technical posts and launch notes
+## Minimum artifact set
 
-The point is not just file organization. The point is to keep readers from having to guess whether a page is a stable reference, a live project surface, or a point-in-time engineering note.
+For most sites, the first useful artifact set is:
 
-## How to decide where a page belongs
+- clear homepage and project pages
+- valid sitemap and `robots.txt`
+- an `llms.txt` that points at the right URLs
+- stable repo metadata and release notes
+- structured data where it clarifies the page role instead of adding noise
 
-### Put it in Projects when
-- the page explains one concrete system or product lane
-- the page needs status, scope, current stage, or next milestone framing
-- the page is best understood as part of the live stack map
+## Common mistakes
 
-### Put it in Documentation when
-- the page explains a reusable control layer or stable operating rule
-- the content should remain true across multiple releases
-- the goal is to teach a model, not narrate a moment
+### Publishing artifacts without a page model
+If the homepage, docs, and repo each tell a different story, `llms.txt` will not save you.
 
-### Put it in Blog when
-- the page records why a decision was made
-- the lesson is still stabilizing
-- the value is in the rationale, pressure, or tradeoff rather than a finished reference model
+### Treating GEO like copywriting only
+Copy matters, but AI search systems also depend on structure, page role, metadata, links, and machine-readable artifacts.
 
-## Design principle
+### Claiming wins without comparison
+You need before/after evidence. GEO should behave like operational work, not vibes-based SEO.
 
-The homepage should feel like a modern product and platform site.
-The reading pages should feel like high-signal technical documentation.
+## Suggested next step
 
-That means the visual shell can evolve, but the reading system should remain boring in the best sense: clear navigation, stable structure, and pages that are easy to scan months later.
-
-## Publishing workflow
-
-1. Write content in Markdown or MDX.
-2. Keep titles and descriptions tight enough to work in navigation, cards, and search.
-3. Put the page in the correct directory before polishing the prose.
-4. Build locally before publishing.
-5. If the page still reads like decision history, move it to Blog instead of forcing it into Documentation.
-
-## Related reading
-
-- [Documentation](/docs/): the hub this page belongs to.
-- [Projects](/projects/): the stack map for live product and system layers.
-- [Blog](/blog/): the place for technical context before it hardens into reference guidance.
+- Open the project page: [geo-skill](/projects/geo-skill/)
+- Then read: [GEO surface model](/docs/design-language/)

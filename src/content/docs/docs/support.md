@@ -1,50 +1,35 @@
 ---
 title: Support
-sidebar:
-  label: Support
-description: How to support the vespid-ai open-source stack, sponsor specific work, or help with docs and implementation.
+description: How to support geo-skill, propose GEO work, or start a scoped conversation around AI-search discoverability.
 ---
 
-`vespid-ai` does not run a polished public sponsorship program yet, but support is welcome.
+`geo-skill` is public and active. Support is useful when it helps turn GEO work into better benchmarks, clearer artifacts, and more reusable workflows.
 
-## Current support paths
+## Good support requests
 
-### Fund a specific milestone
+Open an issue in [`vespid-ai/geo-skill`](https://github.com/vespid-ai/geo-skill/issues) when you want to propose:
 
-If you want to support the work financially, the best path right now is to start with a scoped conversation rather than a generic donation button.
+- a new GEO benchmark or fixture
+- a missing generator or audit check
+- a better before/after comparison surface
+- a bug in existing CLI behavior or skill-pack guidance
+- a public-site or repository pattern that should become a reusable workflow
 
-Use GitHub Discussions in [`vespid-ai/vespid-ai`](https://github.com/vespid-ai/vespid-ai/discussions) to propose:
+## Good sponsorship requests
 
-- sponsorship of a specific repository milestone
-- implementation of a particular integration or workflow
-- documentation or launch work that would unblock adoption
-- advisory or architecture support around agent runtime, authorization, or operator portability
+If you want to sponsor specific work, be concrete about:
 
-### Contribute without funding
+- which public surface you care about
+- what URLs or artifacts are currently weak
+- what output you want (audit, migration, generator, regression fixture, docs)
+- what counts as success
 
-You can also help by contributing:
+## Best first step
 
-- bug reports with real reproduction details
-- documentation fixes and examples
-- issue triage and implementation feedback
-- discussion threads that sharpen the product and trust model
+If the work is public and reproducible, start with:
 
-## What support is most useful
+- the repo: https://github.com/vespid-ai/geo-skill
+- releases: https://github.com/vespid-ai/geo-skill/releases
+- the docs hub: https://vespid.ai/docs/
 
-The highest-leverage help is support that improves the real execution boundary of the stack:
-
-- runtime control and protected actions in `vespid`
-- delegated authorization flows in `skillauth`
-- profile portability and sanitization in `hermes-profile-sync`
-- public docs and launch surfaces in `vespid-ai`
-
-## Expectation setting
-
-If you open a support or sponsorship thread, include:
-
-- the repository or milestone you care about
-- the use case you want unlocked
-- whether the need is open-source, internal tooling, or commercial deployment
-- any timing or budget constraint that matters
-
-That keeps the discussion concrete and lets support map to real work instead of generic “please sponsor” copy.
+That keeps the GEO conversation grounded in real surfaces instead of vague requests.
