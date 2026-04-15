@@ -77,6 +77,31 @@ That matters because a public stack can be technically strong and still remain i
 - Start with the README and CLI examples
 - Use the built-in skills and audit/generate flows to improve public site discoverability, docs legibility, and OSS distribution surfaces
 
+## Public entry points
+
+<div class="vespid-hub-grid">
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai/geo-skill">
+    <div class="vespid-meta">GitHub</div>
+    <h3>Inspect the repository</h3>
+    <p>Read the public codebase, README, skills, and CLI examples for discovery work.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai/geo-skill/releases">
+    <div class="vespid-meta">Releases</div>
+    <h3>Track public milestones</h3>
+    <p>Use the releases page to follow CLI batches, tagged versions, and distribution updates.</p>
+  </a>
+  <a class="vespid-hub-card" href="/docs/">
+    <div class="vespid-meta">Documentation</div>
+    <h3>Read the durable model</h3>
+    <p>Use the docs for the shared public-system narrative around structure, legibility, and operator-facing surfaces.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://vespid.ai/">
+    <div class="vespid-meta">Website</div>
+    <h3>Return to the platform overview</h3>
+    <p>Move back to the public site to see how discovery tooling reinforces the rest of the stack.</p>
+  </a>
+</div>
+
 ## Related reading
 
 - [Projects](/projects/): the wider public map for how discovery tooling connects to the rest of the stack.

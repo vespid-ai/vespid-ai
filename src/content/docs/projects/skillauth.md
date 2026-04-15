@@ -74,6 +74,31 @@ Without it, the rest of the stack risks becoming operationally impressive but au
 - Start with the README, then the architecture/threat-model/audit docs
 - Use it as a reference implementation for scoped agent access, not as a drop-in universal policy engine
 
+## Public entry points
+
+<div class="vespid-hub-grid">
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai/skillauth">
+    <div class="vespid-meta">GitHub</div>
+    <h3>Inspect the repository</h3>
+    <p>Read the public codebase, README, and reference material behind the authorization model.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai/skillauth/releases">
+    <div class="vespid-meta">Releases</div>
+    <h3>Track public milestones</h3>
+    <p>Use the releases page to watch when the delegated-execution surface starts shipping versions.</p>
+  </a>
+  <a class="vespid-hub-card" href="/docs/">
+    <div class="vespid-meta">Documentation</div>
+    <h3>Read the durable model</h3>
+    <p>Use the docs for the shared control path around approvals, authority, and operator-facing behavior.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://vespid.ai/">
+    <div class="vespid-meta">Website</div>
+    <h3>Return to the platform overview</h3>
+    <p>Move back to the public site to see how delegated authorization fits into the broader stack.</p>
+  </a>
+</div>
+
 ## Related reading
 
 - [vespid](/projects/vespid/): the runtime layer that depends on clear execution authority.

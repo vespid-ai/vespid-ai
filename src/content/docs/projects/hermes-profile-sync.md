@@ -69,6 +69,31 @@ It matters because real agent systems are not only about runtime and authorizati
 - Start with the README and current CLI behavior
 - Treat it as portability infrastructure for serious agent operators, not generic backup tooling
 
+## Public entry points
+
+<div class="vespid-hub-grid">
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai/hermes-profile-sync">
+    <div class="vespid-meta">GitHub</div>
+    <h3>Inspect the repository</h3>
+    <p>Read the public codebase, README, and CLI surface for portability workflows.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai/hermes-profile-sync/releases">
+    <div class="vespid-meta">Releases</div>
+    <h3>Track public milestones</h3>
+    <p>Use the releases page to follow when portability flows turn into versioned public milestones.</p>
+  </a>
+  <a class="vespid-hub-card" href="/docs/">
+    <div class="vespid-meta">Documentation</div>
+    <h3>Read the durable model</h3>
+    <p>Use the docs for the broader operator-state and control-story context behind this portability layer.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://vespid.ai/">
+    <div class="vespid-meta">Website</div>
+    <h3>Return to the platform overview</h3>
+    <p>Move back to the public site to see how portability fits into the wider trust model.</p>
+  </a>
+</div>
+
 ## Related reading
 
 - [Projects](/projects/): the wider stack context around portability.

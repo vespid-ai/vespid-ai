@@ -63,6 +63,31 @@ Push the product from "working lane" toward "consumer-stable lane":
 3. state sync between Android and orchestrator
 4. more durable end-to-end stability on the main user path
 
+## Public entry points
+
+<div class="vespid-hub-grid">
+  <a class="vespid-hub-card" href="https://github.com/vespid-ai">
+    <div class="vespid-meta">GitHub</div>
+    <h3>Inspect the public org surface</h3>
+    <p>The product implementation repo is private, but the surrounding public stack and repositories live in the org surface.</p>
+  </a>
+  <a class="vespid-hub-card" href="/projects/">
+    <div class="vespid-meta">Projects</div>
+    <h3>See the supporting stack</h3>
+    <p>Use the projects hub to inspect the public runtime, authorization, portability, and discovery layers behind the product lane.</p>
+  </a>
+  <a class="vespid-hub-card" href="/docs/">
+    <div class="vespid-meta">Documentation</div>
+    <h3>Read the durable model</h3>
+    <p>Use the docs for the broader control, approval, and runtime narrative that explains the product behavior.</p>
+  </a>
+  <a class="vespid-hub-card" href="https://vespid.ai/">
+    <div class="vespid-meta">Website</div>
+    <h3>Return to the platform overview</h3>
+    <p>Move back to the homepage to see how the product surface connects to the rest of the public system.</p>
+  </a>
+</div>
+
 ## Related reading
 
 - [Projects](/projects/): see how this product surface fits into the broader stack.
