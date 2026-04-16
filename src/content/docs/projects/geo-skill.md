@@ -26,7 +26,7 @@ A lot of teams already know AI search matters, but the work still lands as vague
 - Repo: https://github.com/vespid-ai/geo-skill
 - Visibility: public
 - Current stage: released CLI and reusable skill pack
-- Latest release: `v0.4.0`
+- Latest release: `v0.5.0`
 - Scope: GEO audits, generators, comparisons, and machine-readable distribution for AI search
 
 ## What is already real
