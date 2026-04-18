@@ -1,146 +1,114 @@
 ---
-title: "vespid: agent-native services over ordinary HTTP."
+title: Build agent-native services over ordinary HTTP.
 description: "vespid is a contract-first prototype for discoverable, authorized, approvable, and auditable agent-native web services over ordinary HTTP."
 template: splash
 hero:
-  tagline: Contract-first gateway for discoverable, authorized, approvable, and auditable agent actions.
+  tagline: Open-source HTTP gateway/runtime with scoped grants, approval, and audit evidence.
   image:
     file: ../../assets/hero-orbit.svg
     alt: Abstract map of a service contract and gateway runtime
   actions:
-    - text: Open project
-      link: /projects/vespid/
+    - text: Run quickstart
+      link: /docs/getting-started/
       icon: right-arrow
-    - text: Read the docs
-      link: /docs/
+    - text: Open GitHub
+      link: https://github.com/vespid-ai/vespid
       variant: minimal
 ---
 
 <div class="hero-html vespid-intro">
   <p>
-    vespid.ai is the public site for <code>vespid</code>: a contract-first prototype for agent-native web
-    services that can be discovered, authorized, approved, resumed, and audited through ordinary HTTP
-    instead of a site-specific client, MCP server, or plugin.
+    vespid keeps the service contract and the gateway trust boundary in the same runtime, so a generic
+    agent can use normal HTTP without bypassing scoped access, approval, or audit evidence.
+  </p>
+  <p class="vespid-intro-note">
+    <strong>Current status:</strong> public reference implementation for local evaluation, not a production-ready control plane.
   </p>
   <p class="vespid-mobile-subnav">
-    <a href="/docs/">Read the vespid documentation</a>
+    <a href="/projects/vespid/">Open the project page</a>
   </p>
   <ul class="vespid-pills">
     <li>ordinary HTTP</li>
-    <li>gateway enforcement</li>
+    <li>scoped access</li>
+    <li>audit evidence</li>
   </ul>
 </div>
 
 <div class="vespid-proof-bar">
   <div>
-    <strong>Public repo</strong>
-    <span>The homepage, docs, and blog all route back to the same vespid repository instead of splitting into parallel product narratives.</span>
+    <strong>MIT-licensed public repo</strong>
+    <span>The code, docs, and site all point to the same public repository: <code>vespid-ai/vespid</code>.</span>
   </div>
   <div>
-    <strong>1 canonical contract surface</strong>
-    <span><code>/.well-known/agent-service.json</code>, OpenAPI 3.1, and <code>x-agent-*</code> metadata define what a service exposes to agents.</span>
+    <strong>Reference HTTP demo included</strong>
+    <span>The quickstart runs a local appointment service plus a gateway runtime and drives the full authorization and approval flow.</span>
   </div>
   <div>
-    <strong>1 reference enforcement flow</strong>
-    <span>The demo proves discover → grant → approve → artifact → audit through a local gateway runtime.</span>
-  </div>
-</div>
-
-<div class="vespid-feature-layout">
-  <a class="vespid-featured-project" href="/projects/vespid/">
-    <div class="vespid-meta">Featured project</div>
-    <h2>vespid</h2>
-    <p>
-      A contract-first prototype for making web services discoverable, understandable, authorized,
-      approvable, callable, and auditable by agents through ordinary HTTP.
-    </p>
-    <div class="vespid-feature-list">
-      <span>service contract</span>
-      <span>gateway runtime</span>
-      <span>audit trail</span>
-    </div>
-  </a>
-  <div class="vespid-side-stack">
-    <a class="vespid-side-card" href="/docs/">
-      <div class="vespid-meta">Documentation</div>
-      <h3>Read the model</h3>
-      <p>Use the docs for the quickest path to the contract surface, gateway semantics, and how the demo flow actually works.</p>
-    </a>
-    <a class="vespid-side-card" href="/blog/">
-      <div class="vespid-meta">Blog</div>
-      <h3>Read the rationale</h3>
-      <p>Use the blog for the product and architecture decisions behind the HTTP-first posture and the single-project public site.</p>
-    </a>
+    <strong>Public docs and issue path</strong>
+    <span>Quickstart, contract docs, contribution guidance, and the issue tracker are all part of the public surface.</span>
   </div>
 </div>
 
 <div class="vespid-section">
-  <div class="vespid-meta">Public surface</div>
-  <h2>Start from the repo, the demo, and the docs</h2>
+  <div class="vespid-meta">Quickstart</div>
+  <h2>Go from clone to a full trust-boundary demo in minutes</h2>
   <p>
-    The easiest way to understand vespid is to inspect the public repo, run the local HTTP demo,
-    and read the docs that explain why the gateway stays in-band instead of being replaced by
-    special clients or adapter-specific product surfaces.
+    The shortest useful path is not a slide deck. Clone the repo, run the local demo, then inspect how the runtime
+    moves from discovery to grant, approval, artifact, and audit.
   </p>
-  <div class="vespid-project-grid">
-    <a class="vespid-project-card" href="/projects/vespid/">
+  <div class="vespid-quickstart-layout">
+    <div class="vespid-command-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Project</div>
-        <span class="vespid-status-pill vespid-status-pill--green">Start here</span>
-      </div>
-      <h3>Open the full project page</h3>
-      <p>Use the project page for scope, architecture, trust boundary, and public entry points into the repository and docs.</p>
-      <div class="vespid-project-footer">
-        <span>The shortest summary if you want narrative and implementation in one place.</span>
-        <span>Open project</span>
-      </div>
-    </a>
-    <a class="vespid-project-card" href="https://github.com/vespid-ai/vespid">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Repo</div>
-        <span class="vespid-status-pill vespid-status-pill--blue">Public</span>
-      </div>
-      <h3>Inspect the repository</h3>
-      <p>Read the prototype directly if you want the TypeScript gateway, contract schema, demo appointment service, and tests before the prose.</p>
-      <div class="vespid-project-footer">
-        <span>The code-first entry point for builders who want the raw implementation surface.</span>
-        <span>Open repo</span>
-      </div>
-    </a>
-    <a class="vespid-project-card" href="/docs/getting-started/">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Quickstart</div>
+        <div class="vespid-meta">CLI path</div>
         <span class="vespid-status-pill vespid-status-pill--purple">Local</span>
       </div>
-      <h3>Run the HTTP demo</h3>
-      <p>Start from the local demo if you want to see discovery, temporary grants, approval, task resume, artifacts, and audit evidence end to end.</p>
-      <div class="vespid-project-footer">
-        <span>The fastest way to see what the prototype actually proves today.</span>
-        <span>Open quickstart</span>
+      <h3>Run the current reference slice</h3>
+      <pre class="vespid-command-shell"><code>git clone https://github.com/vespid-ai/vespid.git
+cd vespid
+npm install
+npm run demo:http
+npm test</code></pre>
+      <div class="vespid-command-list">
+        <div>
+          <strong>Discover</strong>
+          <span>Load capabilities from <code>/.well-known/agent-service.json</code> plus OpenAPI agent extensions.</span>
+        </div>
+        <div>
+          <strong>Authorize + approve</strong>
+          <span>Watch <code>confirmBooking</code> hit <code>awaiting_auth</code>, then resume the same task after grant issuance.</span>
+        </div>
+        <div>
+          <strong>Inspect evidence</strong>
+          <span>Fetch the final artifact and audit trail after the task succeeds instead of trusting a hidden control plane.</span>
+        </div>
       </div>
-    </a>
-    <a class="vespid-project-card" href="/docs/support/">
-      <div class="vespid-project-topline">
-        <div class="vespid-meta">Support</div>
-        <span class="vespid-status-pill vespid-status-pill--amber">Issues open</span>
-      </div>
-      <h3>Propose reproducible work</h3>
-      <p>Use the support page when you want to propose missing contract semantics, new demos, documentation gaps, or adapter directions grounded in the gateway model.</p>
-      <div class="vespid-project-footer">
-        <span>A better public path than abstract requests for “agent tooling.”</span>
-        <span>Open support</span>
-      </div>
-    </a>
+    </div>
+    <div class="vespid-side-stack">
+      <a class="vespid-side-card" href="/projects/vespid/">
+        <div class="vespid-meta">Project</div>
+        <h3>Read the project page</h3>
+        <p>Use the project page for architecture, trust boundary, and the shortest summary of what is real in the current prototype.</p>
+      </a>
+      <a class="vespid-side-card" href="/docs/">
+        <div class="vespid-meta">Documentation</div>
+        <h3>Follow the exact flow</h3>
+        <p>Use the docs when you want the contract model, route semantics, and the exact HTTP path behind the quickstart.</p>
+      </a>
+      <a class="vespid-side-card" href="/blog/why-this-stack/">
+        <div class="vespid-meta">Rationale</div>
+        <h3>Why HTTP comes before adapters</h3>
+        <p>Read the architecture note when you want the reason the project keeps the gateway runtime primary before adding more surfaces.</p>
+      </a>
+    </div>
   </div>
 </div>
 
 <div class="vespid-section">
-  <div class="vespid-meta">What vespid actually proves</div>
-  <h2>Keep discovery, authorization, approval, and audit in the same runtime story</h2>
+  <div class="vespid-meta">What the runtime proves</div>
+  <h2>Keep discovery, authorization, approval, and audit in the same story</h2>
   <p>
-    vespid is not a generic manifesto about agents. It is a concrete prototype that tries to keep the
-    service contract, gateway semantics, and evidence model aligned enough that a generic agent can use
-    ordinary HTTP without bypassing the real trust boundary.
+    vespid is not trying to be an abstract agent manifesto. The point of the current slice is to keep the service contract,
+    gateway semantics, and evidence model aligned enough that a generic agent can use ordinary HTTP without bypassing the real trust boundary.
   </p>
   <div class="vespid-project-grid">
     <div class="vespid-project-card">
@@ -157,7 +125,7 @@ hero:
         <span class="vespid-status-pill vespid-status-pill--blue">Core</span>
       </div>
       <h3>Scoped temporary grants</h3>
-      <p>Consequential actions stay blocked until the gateway sees a usable grant that matches the task and capability.</p>
+      <p>Consequential actions stay blocked until the gateway sees a usable grant that matches the task binding and capability.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
@@ -165,7 +133,7 @@ hero:
         <span class="vespid-status-pill vespid-status-pill--purple">Core</span>
       </div>
       <h3>Task resume instead of duplicate execution</h3>
-      <p>The original task is resumed after grant issuance and approval, which is the key invariant behind the HTTP demo.</p>
+      <p>The original task is resumed after grant issuance and approval, which is the key invariant behind the current HTTP demo.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
@@ -178,22 +146,61 @@ hero:
   </div>
 </div>
 
-## Start in the right place
-
-<div class="vespid-hub-grid">
-  <a class="vespid-hub-card" href="/projects/vespid/">
-    <div class="vespid-meta">Project</div>
-    <h3>Open vespid</h3>
-    <p>Start here if you want the clearest summary of the project, repository, and trust boundary.</p>
-  </a>
-  <a class="vespid-hub-card vespid-hub-card--tall" href="/docs/">
-    <div class="vespid-meta">Documentation</div>
-    <h3>Read the durable reference</h3>
-    <p>Use the docs when you want stable guidance about the contract surface, gateway runtime, and HTTP demo flow.</p>
-  </a>
-  <a class="vespid-hub-card" href="/blog/">
-    <div class="vespid-meta">Blog</div>
-    <h3>Read the decisions</h3>
-    <p>Use the blog for launch context and why the project stays HTTP-first before adding more adapter surfaces.</p>
-  </a>
+<div class="vespid-section">
+  <div class="vespid-meta">Open-source surface</div>
+  <h2>Start from the public proof, then go deeper</h2>
+  <p>
+    The homepage should answer the basic OSS questions immediately: where the code lives, how to run it,
+    how to review the security posture, and where to contribute improvements.
+  </p>
+  <div class="vespid-project-grid">
+    <a class="vespid-project-card" href="https://github.com/vespid-ai/vespid">
+      <div class="vespid-project-topline">
+        <div class="vespid-meta">GitHub</div>
+        <span class="vespid-status-pill vespid-status-pill--blue">MIT</span>
+      </div>
+      <h3>Browse the repository</h3>
+      <p>Read the public codebase, tests, docs, and issue tracker directly from the canonical repository.</p>
+      <div class="vespid-project-footer">
+        <span>The code-first entry point for builders who want proof before prose.</span>
+        <span>Open GitHub</span>
+      </div>
+    </a>
+    <a class="vespid-project-card" href="/docs/getting-started/">
+      <div class="vespid-project-topline">
+        <div class="vespid-meta">Quickstart</div>
+        <span class="vespid-status-pill vespid-status-pill--purple">Local</span>
+      </div>
+      <h3>Run the reference flow</h3>
+      <p>Use the quickstart when you want the shortest route from clone to discovery, grant, approval, artifact, and audit inspection.</p>
+      <div class="vespid-project-footer">
+        <span>The fastest way to validate the current thesis on your own machine.</span>
+        <span>Open quickstart</span>
+      </div>
+    </a>
+    <a class="vespid-project-card" href="https://github.com/vespid-ai/vespid/blob/main/SECURITY.md">
+      <div class="vespid-project-topline">
+        <div class="vespid-meta">Security</div>
+        <span class="vespid-status-pill vespid-status-pill--amber">Policy</span>
+      </div>
+      <h3>Review the security policy</h3>
+      <p>Check the supported version policy, disclosure guidance, and the security-sensitive surfaces around grants, approval, and audit.</p>
+      <div class="vespid-project-footer">
+        <span>A real trust surface, not a generic “contact us” footer.</span>
+        <span>Open security</span>
+      </div>
+    </a>
+    <a class="vespid-project-card" href="https://github.com/vespid-ai/vespid/blob/main/CONTRIBUTING.md">
+      <div class="vespid-project-topline">
+        <div class="vespid-meta">Contributing</div>
+        <span class="vespid-status-pill vespid-status-pill--green">Open</span>
+      </div>
+      <h3>Improve the current slice</h3>
+      <p>Use the contribution guide for the most useful next work: contract clarity, gateway correctness, runnable proof, and docs ergonomics.</p>
+      <div class="vespid-project-footer">
+        <span>The best next stop if you want to help sharpen the trust boundary instead of widening scope blindly.</span>
+        <span>Open guide</span>
+      </div>
+    </a>
+  </div>
 </div>
