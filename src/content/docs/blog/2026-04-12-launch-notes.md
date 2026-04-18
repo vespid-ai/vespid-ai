@@ -1,61 +1,63 @@
 ---
-title: Why vespid.ai now leads with GEO
-description: Why the public site was refocused on one open GEO project instead of trying to explain multiple unrelated public stories at once.
+title: Why vespid.ai now centers on vespid
+description: Why the public site now introduces one concrete repository and one HTTP runtime story instead of multiple disconnected project narratives.
 ---
 
-The earlier public surface tried to explain several different projects at the same time.
+The public site is better when it introduces the actual public project.
 
-That was not a branding problem. It was an information-architecture problem.
+That sounds obvious, but the failure mode is common: a site starts collecting themes, side projects, and conceptual lanes, and the visitor has to guess which repository is real, which idea is current, and where the implementation actually lives.
 
-When the public surface tries to carry too many system stories at once, three things happen:
-
-1. the homepage stops saying one clear thing
-2. the project map becomes a mixed shelf instead of a reading path
-3. AI-native search systems have no strong signal about which pages matter most
-
-## Why the refocus happened
-
-The clearest public lane was already `geo-skill`.
-
-It has:
-
-- a public repository
-- tagged releases
-- a concrete CLI
-- a reusable skill pack
-- a direct relationship to website structure, repo metadata, and machine-readable artifacts
-
-That makes it a better public center of gravity than a wider stack story where most of the interesting layers are not meant to stay public.
+That was the wrong public shape for vespid.ai.
 
 ## What changed
 
-The public site was narrowed to one story:
+The site now introduces one project only: `vespid`.
 
-- homepage now leads with GEO directly
-- projects now center on one public project, `geo-skill`
-- docs now explain the GEO workflow and surface model
-- blog posts now carry GEO rationale and field notes
-- the organization profile also points at the same project and same public thesis
+That means:
 
-## Why this is better for GEO
+- the homepage points to one repository and one docs spine
+- the project hub no longer tries to explain unrelated lanes
+- the blog now exists to explain decisions around the same public prototype
+- the GitHub repository is part of the main reading path instead of a secondary surface
 
-Good GEO work depends on a surface that is easy to parse.
+## Why this is better
 
-A narrow public story helps because:
+A technical site becomes easier to trust when the public story is narrow enough to inspect.
 
-- important URLs become obvious
-- links reinforce the same project instead of competing with each other
-- `llms.txt`, metadata, and repo surfaces can point to a simpler page model
-- AI search systems have fewer ambiguous public entities to resolve
+For vespid, the important questions are concrete:
 
-## What did not change
+- what is the service contract?
+- where does authorization happen?
+- how does approval work?
+- how is the original task resumed?
+- where do artifacts and audit evidence show up?
 
-The point is not to pretend one project explains everything.
+Those questions all belong to the same repository and the same runtime story. Splitting them across multiple public narratives only makes the site feel less serious.
 
-The point is to make the public surface truthful, legible, and strong enough to support discovery. A public site should say what is actually public and actually useful, not everything that exists behind the scenes.
+## What the site should do now
+
+The homepage should route visitors to three places only:
+
+1. the project page for scope and trust boundary
+2. the docs for the durable contract/runtime model
+3. the blog for short rationale and launch context
+
+That is enough public surface for the current stage of the project.
+
+## What this does not mean
+
+This does not mean the project is “finished,” or that there will never be more public surfaces.
+
+It means the current public posture should match the current implementation reality:
+
+- one public prototype
+- one ordinary-HTTP gateway story
+- one canonical repository
+
+Future adapters, demos, or distribution surfaces can appear later, but they should extend the current contract-first story rather than competing with it.
 
 ## Related reading
 
-- [geo-skill](/projects/geo-skill/): the project the public site now centers on.
-- [Documentation](/docs/): the durable GEO workflow and surface model.
-- [What AI-native search can actually read](/blog/why-this-stack/): the reasoning behind the machine-readable side of the site.
+- [vespid](/projects/vespid/): the project the public site now centers on.
+- [Documentation](/docs/): the durable contract and runtime model.
+- [Why ordinary HTTP comes before adapters](/blog/why-this-stack/): the architecture choice behind the current posture.

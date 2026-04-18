@@ -1,98 +1,94 @@
 ---
 title: Documentation
-description: Durable GEO reference material for AI search, llms.txt, machine-readable public surfaces, and publishing rules.
+description: Durable reference material for the vespid contract surface, gateway runtime, and ordinary-HTTP demo path.
 ---
 
-Documentation is the durable GEO reference layer for vespid.ai: the parts of the work that should stay true after launch notes and one-off experiments stop being enough.
+Documentation is the durable reference layer for vespid.ai: the parts of the project that should still make sense after launch notes and one-off debates stop being enough.
 
 <div class="vespid-feature-layout">
   <a class="vespid-featured-project" href="./getting-started/">
     <div class="vespid-meta">Featured guide</div>
-    <h2>GEO quickstart</h2>
+    <h2>Vespid quickstart</h2>
     <p>
-      Start here if you need the shortest path to the GEO surface model: what to inspect first,
-      which artifacts matter, and how to publish improvements without guessing.
+      Start here if you want the shortest path from clone to a live HTTP demo: install dependencies,
+      run the gateway and appointment service, then inspect the discovery, grant, approval, artifact,
+      and audit flow end to end.
     </p>
     <div class="vespid-feature-list">
-      <span>audit first</span>
-      <span>artifact model</span>
-      <span>publishing path</span>
+      <span>install</span>
+      <span>run demo</span>
+      <span>inspect flow</span>
     </div>
   </a>
   <div class="vespid-side-stack">
-    <a class="vespid-side-card" href="/projects/geo-skill/">
+    <a class="vespid-side-card" href="/projects/vespid/">
       <div class="vespid-meta">Project</div>
-      <h3>See the runnable toolchain</h3>
-      <p>Use the project page when you want the current repo, release, and scope summary behind the documentation.</p>
+      <h3>See the full project surface</h3>
+      <p>Move back to the project page when you want the architecture summary and public entry points around the repo.</p>
     </a>
     <a class="vespid-side-card" href="/blog/">
       <div class="vespid-meta">Blog</div>
-      <h3>Read the unstable context</h3>
-      <p>Use the blog for rationale and field pressure that has not yet hardened into stable guidance.</p>
+      <h3>Read the reasoning</h3>
+      <p>Use the blog when you want the product and architecture decisions behind the docs, not just the durable mechanics.</p>
     </a>
   </div>
 </div>
 
 <div class="vespid-proof-bar">
   <div>
-    <strong>3 reference pages</strong>
-    <span>The docs stay intentionally small so every page carries reusable GEO guidance instead of generic AI-search commentary.</span>
+    <strong>3 core references</strong>
+    <span>The docs stay intentionally small so every page explains something structural about the contract or gateway model.</span>
   </div>
   <div>
-    <strong>1 job</strong>
-    <span>Capture the durable model for machine-readable public surfaces, GEO artifacts, and publishing decisions.</span>
+    <strong>1 local demo path</strong>
+    <span>Everything routes back to the same ordinary-HTTP quickstart instead of diverging into adapter-specific setup guides.</span>
   </div>
   <div>
-    <strong>2 adjacent hubs</strong>
-    <span>Projects show the current toolchain. Blog posts explain why the model changed. Docs keep the stable guidance in the middle.</span>
+    <strong>1 contribution surface</strong>
+    <span>Support and feedback should start from reproducible contract or runtime questions, not abstract “agent platform” requests.</span>
   </div>
 </div>
 
 <div class="vespid-section">
   <div class="vespid-meta">Core references</div>
-  <h2>The current GEO documentation spine</h2>
+  <h2>The current documentation spine</h2>
   <p>
-    These pages explain what should stay stable as the site and toolchain evolve: how to start,
-    how to model the public surface, and where support conversations should happen.
+    If you read only three pages, they should tell you how to run the prototype, how the contract and gateway fit together,
+    and how to propose work without losing the trust-boundary assumptions behind the project.
   </p>
   <div class="vespid-hub-grid">
     <a class="vespid-hub-card" href="./getting-started/">
       <div class="vespid-meta">Quickstart</div>
-      <h3>Start with the workflow</h3>
-      <p>Understand audit-first GEO, the minimum artifact set, and how to avoid random surface edits.</p>
+      <h3>Run the prototype</h3>
+      <p>Clone the repo, start the demo, and inspect the live HTTP flow before debating adapters or packaging.</p>
     </a>
     <a class="vespid-hub-card vespid-hub-card--tall" href="./design-language/">
-      <div class="vespid-meta">Surface model</div>
-      <h3>Design pages that AI search can read</h3>
-      <p>Use the surface-model page to keep homepage, docs, repo, metadata, and machine-readable artifacts aligned.</p>
+      <div class="vespid-meta">Contract model</div>
+      <h3>Understand the contract and gateway boundary</h3>
+      <p>Use the contract model page to understand why the service contract stays canonical and the gateway keeps enforcement in band.</p>
     </a>
     <a class="vespid-hub-card" href="./support/">
       <div class="vespid-meta">Support</div>
-      <h3>Know where to ask for help</h3>
-      <p>Use the support page for contribution, sponsorship, and scoped GEO-work conversations.</p>
+      <h3>Propose work that can be reproduced</h3>
+      <p>Use the support page for issues, documentation gaps, and new demos that are grounded in the existing HTTP runtime story.</p>
     </a>
   </div>
 </div>
-
-## Start in this order
 
 <div class="vespid-section">
   <div class="vespid-meta">Reading path</div>
   <div class="vespid-strip">
     <div>
-      <strong>01</strong>
-      <span>Start with GEO quickstart</span>
-      <p>Read <a href="./getting-started/">GEO quickstart</a> first for the smallest useful workflow.</p>
+      <span>Start with quickstart</span>
+      <p>Read <a href="./getting-started/">Vespid quickstart</a> first for the smallest useful local workflow.</p>
     </div>
     <div>
-      <strong>02</strong>
-      <span>Then align the surface model</span>
-      <p>Use <a href="./design-language/">GEO surface model</a> to make sure the site, repo, and artifacts reinforce the same URLs.</p>
+      <span>Then read the model</span>
+      <p>Use <a href="./design-language/">Contract and gateway model</a> to make sure the contract surface and runtime semantics stay aligned.</p>
     </div>
     <div>
-      <strong>03</strong>
-      <span>Return to the project when needed</span>
-      <p>Move back to <a href="/projects/geo-skill/">geo-skill</a> whenever you need the runnable toolchain behind the guidance.</p>
+      <span>Then return to the repo</span>
+      <p>Move back to <a href="/projects/vespid/">vespid</a> whenever you need the public code surface behind the documentation.</p>
     </div>
   </div>
 </div>
@@ -105,32 +101,32 @@ Documentation is the durable GEO reference layer for vespid.ai: the parts of the
         <div class="vespid-meta">Rule</div>
         <span class="vespid-status-pill vespid-status-pill--green">Stable</span>
       </div>
-      <h3>Audit before editing</h3>
-      <p>Good GEO work starts from an explicit reading of the current public surface, not from random copy rewrites.</p>
+      <h3>Ordinary HTTP first</h3>
+      <p>The supported v0.1 agent path is generic HTTP through the gateway runtime, not a new framework-specific client surface.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
         <div class="vespid-meta">Rule</div>
         <span class="vespid-status-pill vespid-status-pill--blue">Stable</span>
       </div>
-      <h3>Artifacts support pages</h3>
-      <p>`llms.txt`, schema, sitemaps, and repo metadata should reinforce the page model instead of contradicting it.</p>
+      <h3>The contract is canonical</h3>
+      <p>The service manifest, OpenAPI document, and <code>x-agent-*</code> extensions define what downstream adapters are allowed to project.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
         <div class="vespid-meta">Rule</div>
         <span class="vespid-status-pill vespid-status-pill--amber">Stable</span>
       </div>
-      <h3>Compare before claiming improvement</h3>
-      <p>Before/after comparison matters more than intuition when you change machine-readable GEO surfaces.</p>
+      <h3>Gateway enforcement stays in band</h3>
+      <p>Authorization, approval, task resume, artifacts, and audit should stay visible in the runtime path instead of being hidden behind adapter magic.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
         <div class="vespid-meta">Rule</div>
         <span class="vespid-status-pill vespid-status-pill--purple">Stable</span>
       </div>
-      <h3>Keep one public story</h3>
-      <p>Website, repository, release notes, and docs should describe the same project and the same GEO narrative.</p>
+      <h3>Adapters come later</h3>
+      <p>MCP, skills, actions, A2A, and UI projections can exist later, but they have to inherit the same contract and gateway semantics.</p>
     </div>
   </div>
 </div>

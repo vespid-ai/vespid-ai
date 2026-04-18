@@ -1,35 +1,45 @@
 ---
 title: Support
-description: How to support geo-skill, propose GEO work, or start a scoped conversation around AI-search discoverability.
+description: How to support vespid, propose contract or runtime work, and start reproducible conversations around the public prototype.
 ---
 
-`geo-skill` is public and active. Support is useful when it helps turn GEO work into better benchmarks, clearer artifacts, and more reusable workflows.
+`vespid` is public and experimental. Support is most useful when it helps turn questions about agent-native services into better contracts, clearer runtime semantics, and more reproducible demos.
 
-## Good support requests
+## Open an issue when you want to propose
 
-Open an issue in [`vespid-ai/geo-skill`](https://github.com/vespid-ai/geo-skill/issues) when you want to propose:
+Open an issue in [`vespid-ai/vespid`](https://github.com/vespid-ai/vespid/issues) when you want to propose:
 
-- a new GEO benchmark or fixture
-- a missing generator or audit check
-- a better before/after comparison surface
-- a bug in existing CLI behavior or skill-pack guidance
-- a public-site or repository pattern that should become a reusable workflow
+- a contract field or `x-agent-*` semantic that is missing or underspecified
+- a new fail-closed or task-resume test case
+- a better reference service beyond the current appointment demo
+- documentation that would make the gateway model clearer
+- a future adapter direction that can be justified from the canonical HTTP contract
 
-## Good sponsorship requests
+## What to include
 
-If you want to sponsor specific work, be concrete about:
+The most useful issues include:
 
-- which public surface you care about
-- what URLs or artifacts are currently weak
-- what output you want (audit, migration, generator, regression fixture, docs)
-- what counts as success
+1. the problem statement in one sentence
+2. the service or capability surface involved
+3. whether the issue is about discovery, authorization, approval, execution, artifacts, or audit
+4. a minimal reproduction path or expected HTTP flow
+5. what success would look like in code, docs, or tests
 
-## Best first step
+## When to use the docs first
 
-If the work is public and reproducible, start with:
+Before opening a broad issue, it is usually worth checking:
 
-- the repo: https://github.com/vespid-ai/geo-skill
-- releases: https://github.com/vespid-ai/geo-skill/releases
+- [Vespid quickstart](/docs/getting-started/)
+- [Contract and gateway model](/docs/design-language/)
+- [vespid project page](/projects/vespid/)
+
+That keeps the conversation grounded in the current public scope instead of asking the repo to become a vague “agent platform.”
+
+## Public links
+
+- the repo: https://github.com/vespid-ai/vespid
+- issues: https://github.com/vespid-ai/vespid/issues
 - the docs hub: https://vespid.ai/docs/
+- the website: https://vespid.ai/
 
-That keeps the GEO conversation grounded in real surfaces instead of vague requests.
+That keeps support grounded in real public surfaces instead of off-platform context.

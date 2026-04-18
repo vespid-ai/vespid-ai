@@ -1,52 +1,76 @@
 ---
-title: GEO quickstart
-description: The shortest practical path to auditing, generating, and publishing AI-search-friendly public surfaces.
+title: Vespid quickstart
+description: Run the local vespid HTTP demo and inspect discovery, grant, approval, task resume, artifact, and audit behavior.
 ---
 
-GEO quickstart is the smallest useful workflow for improving how a public site or repository shows up in AI-native search.
+Vespid quickstart is the smallest useful workflow for understanding the project: run one local service contract, one local gateway runtime, and inspect the full enforcement path over ordinary HTTP.
 
-## What to inspect first
+## What you need
 
-Start with the public surface as it already exists:
+- Node.js and npm
+- the public repo: https://github.com/vespid-ai/vespid
+- a terminal that can run `curl`
 
-1. homepage and core landing pages
-2. product or project detail pages
-3. docs hub and key reference pages
-4. repository README, description, homepage, and releases
-5. `robots.txt`, sitemap, `llms.txt`, and structured data candidates
+## Install and run
 
-Do not start by adding random GEO artifacts. Start by checking whether the current public story is already clear.
+```bash
+git clone https://github.com/vespid-ai/vespid.git
+cd vespid
+npm install
+npm run demo:http
+```
 
-## Minimum useful workflow
+`npm run demo:http` builds the project, starts a local appointment service, starts the gateway runtime, and prints both local URLs.
 
-1. audit the current surface with `geo-skill`
-2. identify missing or contradictory public facts
-3. generate or repair the machine-readable artifacts that reinforce the right URLs
-4. update the human-readable pages so the same story appears in visible copy and metadata
-5. compare before/after reports instead of assuming the change helped
+## What the demo gives you
 
-## Minimum artifact set
+The demo is not just “hello world.” It shows this path end to end:
 
-For most sites, the first useful artifact set is:
+```text
+discover -> capabilities -> searchSlots -> createBookingDraft
+-> confirmBooking awaiting_auth -> grant -> resume same task
+-> awaiting_approval -> approve -> booking_confirmation artifact -> audit evidence
+```
 
-- clear homepage and project pages
-- valid sitemap and `robots.txt`
-- an `llms.txt` that points at the right URLs
-- stable repo metadata and release notes
-- structured data where it clarifies the page role instead of adding noise
+The important invariant is that grant issuance resumes the original task by `taskId`. It must not create a second consequential task.
+
+## The shortest useful HTTP flow
+
+Once the local URLs are printed, the shortest useful inspection path is:
+
+1. `POST /gateway/discover` with the appointment service URL
+2. `GET /gateway/capabilities`
+3. `POST /gateway/invoke` for `searchSlots`
+4. `POST /gateway/invoke` for `createBookingDraft`
+5. `POST /gateway/invoke` for `confirmBooking` and observe `awaiting_auth`
+6. `POST /gateway/grants` with the capability and draft/task binding
+7. `POST /gateway/invoke` with the original `taskId` to resume
+8. `POST /gateway/approvals/{approvalId}/approve`
+9. `GET /gateway/tasks/{taskId}`
+10. `GET /gateway/artifacts/{artifactId}` and `GET /gateway/audit`
+
+## Verify the project after the demo
+
+Run the full test suite if you want proof that the behavior is not just manual demo wiring:
+
+```bash
+npm test
+```
+
+The tests cover manifest validation, HTTP discovery, draft creation, task resume, approval rejection, and fail-closed handling for invalid grants.
 
 ## Common mistakes
 
-### Publishing artifacts without a page model
-If the homepage, docs, and repo each tell a different story, `llms.txt` will not save you.
+### Treating the gateway like a thin proxy
 
-### Treating GEO like copywriting only
-Copy matters, but AI search systems also depend on structure, page role, metadata, links, and machine-readable artifacts.
+The gateway is the point of the prototype. If you skip it and call the demo service directly, you are no longer exercising the authorization, approval, artifact, or audit model that vespid is trying to prove.
 
-### Claiming wins without comparison
-You need before/after evidence. GEO should behave like operational work, not vibes-based SEO.
+### Adding adapters before the HTTP contract is credible
 
-## Suggested next step
+The current v0.1 posture is deliberate: ordinary HTTP first, adapters later. If the HTTP contract is weak, generating more surfaces from it only spreads the ambiguity further.
 
-- Open the project page: [geo-skill](/projects/geo-skill/)
-- Then read: [GEO surface model](/docs/design-language/)
+## Related reading
+
+- Open the project page: [vespid](/projects/vespid/)
+- Then read: [Contract and gateway model](/docs/design-language/)
+- Then read: [Why ordinary HTTP comes before adapters](/blog/why-this-stack/)

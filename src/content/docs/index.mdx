@@ -1,135 +1,122 @@
 ---
-title: Make AI search cite the right page.
-description: "Generative Engine Optimization for AI search, ChatGPT Search, llms.txt, and machine-readable public surfaces."
+title: "vespid: agent-native services over ordinary HTTP."
+description: "vespid is a contract-first prototype for discoverable, authorized, approvable, and auditable agent-native web services over ordinary HTTP."
 template: splash
 hero:
-  tagline: Generative Engine Optimization for AI-native search surfaces.
+  tagline: Contract-first gateway for discoverable, authorized, approvable, and auditable agent actions.
   image:
     file: ../../assets/hero-orbit.svg
-    alt: Abstract map of machine-readable GEO surfaces
+    alt: Abstract map of a service contract and gateway runtime
   actions:
-    - text: Explore geo-skill
-      link: /projects/geo-skill/
+    - text: Open project
+      link: /projects/vespid/
       icon: right-arrow
-    - text: Read GEO docs
+    - text: Read the docs
       link: /docs/
       variant: minimal
 ---
 
 <div class="hero-html vespid-intro">
   <p>
-    vespid.ai is now a GEO-first public site. Everything here is organized around one question:
-    how do you make products, docs, and repositories legible to AI-native search systems without
-    turning the work into vague SEO folklore?
+    vespid.ai is the public site for <code>vespid</code>: a contract-first prototype for agent-native web
+    services that can be discovered, authorized, approved, resumed, and audited through ordinary HTTP
+    instead of a site-specific client, MCP server, or plugin.
   </p>
   <p class="vespid-mobile-subnav">
-    <a href="/docs/">Read the GEO documentation</a>
+    <a href="/docs/">Read the vespid documentation</a>
   </p>
   <ul class="vespid-pills">
-    <li>AI search</li>
-    <li>llms.txt</li>
+    <li>ordinary HTTP</li>
+    <li>gateway enforcement</li>
   </ul>
 </div>
 
 <div class="vespid-proof-bar">
   <div>
-    <strong>1 public project</strong>
-    <span>geo-skill is the only public project lane: a reusable skill pack and Python CLI for operational GEO work.</span>
+    <strong>Public repo</strong>
+    <span>The homepage, docs, and blog all route back to the same vespid repository instead of splitting into parallel product narratives.</span>
   </div>
   <div>
-    <strong>3 public entry points</strong>
-    <span>Project page, documentation, and blog posts all explain the same GEO system from different reading paths.</span>
+    <strong>1 canonical contract surface</strong>
+    <span><code>/.well-known/agent-service.json</code>, OpenAPI 3.1, and <code>x-agent-*</code> metadata define what a service exposes to agents.</span>
   </div>
   <div>
-    <strong>1 repeatable workflow</strong>
-    <span>Audit, generate, compare, and ship machine-readable surfaces instead of guessing what AI search can see.</span>
+    <strong>1 reference enforcement flow</strong>
+    <span>The demo proves discover → grant → approve → artifact → audit through a local gateway runtime.</span>
   </div>
 </div>
 
 <div class="vespid-feature-layout">
-  <a class="vespid-featured-project" href="/projects/geo-skill/">
+  <a class="vespid-featured-project" href="/projects/vespid/">
     <div class="vespid-meta">Featured project</div>
-    <h2>geo-skill</h2>
+    <h2>vespid</h2>
     <p>
-      An open-source GEO skill pack and Python CLI for AI search audits, llms.txt generation,
-      structured data improvements, and machine-readable distribution work.
+      A contract-first prototype for making web services discoverable, understandable, authorized,
+      approvable, callable, and auditable by agents through ordinary HTTP.
     </p>
     <div class="vespid-feature-list">
-      <span>AI search audits</span>
-      <span>llms.txt</span>
-      <span>structured data</span>
+      <span>service contract</span>
+      <span>gateway runtime</span>
+      <span>audit trail</span>
     </div>
   </a>
   <div class="vespid-side-stack">
     <a class="vespid-side-card" href="/docs/">
       <div class="vespid-meta">Documentation</div>
-      <h3>Read the GEO model</h3>
-      <p>Use the docs to understand surface design, machine-readable artifacts, and the publishing path behind repeatable GEO work.</p>
+      <h3>Read the model</h3>
+      <p>Use the docs for the quickest path to the contract surface, gateway semantics, and how the demo flow actually works.</p>
     </a>
     <a class="vespid-side-card" href="/blog/">
       <div class="vespid-meta">Blog</div>
-      <h3>Follow the field notes</h3>
-      <p>Read short technical essays about why the site was refocused on GEO and what AI-native search actually needs from public surfaces.</p>
+      <h3>Read the rationale</h3>
+      <p>Use the blog for the product and architecture decisions behind the HTTP-first posture and the single-project public site.</p>
     </a>
   </div>
 </div>
 
 <div class="vespid-section">
-  <div class="vespid-meta">Open-source surface</div>
-  <h2>Start from the public proof, not just the GEO pitch</h2>
+  <div class="vespid-meta">Public surface</div>
+  <h2>Start from the repo, the demo, and the docs</h2>
   <p>
-    GEO gets easier to trust when the public surface is inspectable: a real repo, a tagged release,
-    a permissive license, and an issue path that turns vague requests into reproducible work.
+    The easiest way to understand vespid is to inspect the public repo, run the local HTTP demo,
+    and read the docs that explain why the gateway stays in-band instead of being replaced by
+    special clients or adapter-specific product surfaces.
   </p>
-  <div class="vespid-proof-bar">
-    <div>
-      <strong>1 tagged CLI release</strong>
-      <span><code>geo-skill</code> v0.5.0 is the current public batch, so the homepage points to a versioned artifact instead of an abstract promise.</span>
-    </div>
-    <div>
-      <strong>MIT-licensed public repo</strong>
-      <span>The project ships as an open-source skill pack and Python CLI that can be inspected, forked, and extended from GitHub.</span>
-    </div>
-    <div>
-      <strong>Issues-first support path</strong>
-      <span>Bug reports, missing checks, and new GEO workflows can start from public issues before they turn into sponsorship or implementation threads.</span>
-    </div>
-  </div>
   <div class="vespid-project-grid">
-    <a class="vespid-project-card" href="/projects/geo-skill/">
+    <a class="vespid-project-card" href="/projects/vespid/">
       <div class="vespid-project-topline">
         <div class="vespid-meta">Project</div>
         <span class="vespid-status-pill vespid-status-pill--green">Start here</span>
       </div>
       <h3>Open the full project page</h3>
-      <p>Use the project page for the shortest path to scope, public entry points, releases, and how GEO fits the rest of the public site.</p>
+      <p>Use the project page for scope, architecture, trust boundary, and public entry points into the repository and docs.</p>
       <div class="vespid-project-footer">
-        <span>The best first stop if you want the repo and narrative layer together.</span>
+        <span>The shortest summary if you want narrative and implementation in one place.</span>
         <span>Open project</span>
       </div>
     </a>
-    <a class="vespid-project-card" href="https://github.com/vespid-ai/geo-skill">
+    <a class="vespid-project-card" href="https://github.com/vespid-ai/vespid">
       <div class="vespid-project-topline">
         <div class="vespid-meta">Repo</div>
-        <span class="vespid-status-pill vespid-status-pill--blue">MIT</span>
+        <span class="vespid-status-pill vespid-status-pill--blue">Public</span>
       </div>
-      <h3>Inspect the repo surface</h3>
-      <p>Jump straight into the repository if you want code, fixtures, CLI shape, and issue history before reading the rest of the site.</p>
+      <h3>Inspect the repository</h3>
+      <p>Read the prototype directly if you want the TypeScript gateway, contract schema, demo appointment service, and tests before the prose.</p>
       <div class="vespid-project-footer">
-        <span>The code-first entry point for builders who want proof before prose.</span>
+        <span>The code-first entry point for builders who want the raw implementation surface.</span>
         <span>Open repo</span>
       </div>
     </a>
-    <a class="vespid-project-card" href="https://github.com/vespid-ai/geo-skill/releases/tag/v0.5.0">
+    <a class="vespid-project-card" href="/docs/getting-started/">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Release</div>
-        <span class="vespid-status-pill vespid-status-pill--purple">v0.5.0</span>
+        <div class="vespid-meta">Quickstart</div>
+        <span class="vespid-status-pill vespid-status-pill--purple">Local</span>
       </div>
-      <h3>Inspect the current tagged batch</h3>
-      <p>Open the latest tagged release if you want the clearest shipped artifact, release notes, and a concrete proof surface for the public GEO workflow.</p>
+      <h3>Run the HTTP demo</h3>
+      <p>Start from the local demo if you want to see discovery, temporary grants, approval, task resume, artifacts, and audit evidence end to end.</p>
       <div class="vespid-project-footer">
-        <span>The fastest way to see what is actually shipped today.</span>
-        <span>Open release</span>
+        <span>The fastest way to see what the prototype actually proves today.</span>
+        <span>Open quickstart</span>
       </div>
     </a>
     <a class="vespid-project-card" href="/docs/support/">
@@ -137,10 +124,10 @@ hero:
         <div class="vespid-meta">Support</div>
         <span class="vespid-status-pill vespid-status-pill--amber">Issues open</span>
       </div>
-      <h3>Propose work that can be reproduced</h3>
-      <p>Use the support page when you want the public path for missing audit checks, new benchmarks, scoped GEO work, or concrete artifact improvements.</p>
+      <h3>Propose reproducible work</h3>
+      <p>Use the support page when you want to propose missing contract semantics, new demos, documentation gaps, or adapter directions grounded in the gateway model.</p>
       <div class="vespid-project-footer">
-        <span>A more mature OSS posture than asking visitors to guess how to engage.</span>
+        <span>A better public path than abstract requests for “agent tooling.”</span>
         <span>Open support</span>
       </div>
     </a>
@@ -148,37 +135,45 @@ hero:
 </div>
 
 <div class="vespid-section">
-  <div class="vespid-meta">Why GEO matters</div>
-  <h2>Public visibility now depends on machine-readable structure</h2>
+  <div class="vespid-meta">What vespid actually proves</div>
+  <h2>Keep discovery, authorization, approval, and audit in the same runtime story</h2>
   <p>
-    A strong product can still disappear in AI search if its public surface is ambiguous, fragmented,
-    or impossible for retrieval systems to extract cleanly. GEO is the discipline of fixing that with
-    better artifacts, clearer pages, and explicit machine-readable signals.
+    vespid is not a generic manifesto about agents. It is a concrete prototype that tries to keep the
+    service contract, gateway semantics, and evidence model aligned enough that a generic agent can use
+    ordinary HTTP without bypassing the real trust boundary.
   </p>
   <div class="vespid-project-grid">
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Surface</div>
+        <div class="vespid-meta">Contract</div>
         <span class="vespid-status-pill vespid-status-pill--green">Core</span>
       </div>
-      <h3>Machine-readable pages</h3>
-      <p>Homepages, product pages, docs, changelogs, and comparison pages should expose stable facts that search systems can extract without guessing.</p>
+      <h3>Discoverable service surfaces</h3>
+      <p>A service publishes a machine-readable contract through <code>/.well-known/agent-service.json</code> plus OpenAPI agent extensions.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Artifact</div>
+        <div class="vespid-meta">Authorization</div>
         <span class="vespid-status-pill vespid-status-pill--blue">Core</span>
       </div>
-      <h3>llms.txt and structured data</h3>
-      <p>Good GEO work uses explicit artifacts to reinforce what the public site is, what matters, and which URLs deserve to be cited.</p>
+      <h3>Scoped temporary grants</h3>
+      <p>Consequential actions stay blocked until the gateway sees a usable grant that matches the task and capability.</p>
     </div>
     <div class="vespid-project-card">
       <div class="vespid-project-topline">
-        <div class="vespid-meta">Workflow</div>
+        <div class="vespid-meta">Approval</div>
         <span class="vespid-status-pill vespid-status-pill--purple">Core</span>
       </div>
-      <h3>Audits instead of folklore</h3>
-      <p>geo-skill turns GEO into an inspectable workflow: benchmark, audit, generate, compare, and ship.</p>
+      <h3>Task resume instead of duplicate execution</h3>
+      <p>The original task is resumed after grant issuance and approval, which is the key invariant behind the HTTP demo.</p>
+    </div>
+    <div class="vespid-project-card">
+      <div class="vespid-project-topline">
+        <div class="vespid-meta">Evidence</div>
+        <span class="vespid-status-pill vespid-status-pill--amber">Core</span>
+      </div>
+      <h3>Artifacts and audit logs</h3>
+      <p>Successful runs return artifacts and append audit evidence so the result is inspectable after the action, not only during it.</p>
     </div>
   </div>
 </div>
@@ -186,19 +181,19 @@ hero:
 ## Start in the right place
 
 <div class="vespid-hub-grid">
-  <a class="vespid-hub-card" href="/projects/geo-skill/">
+  <a class="vespid-hub-card" href="/projects/vespid/">
     <div class="vespid-meta">Project</div>
-    <h3>Open geo-skill</h3>
-    <p>Go straight to the project page if you want the shortest path to the repo, releases, and current scope.</p>
+    <h3>Open vespid</h3>
+    <p>Start here if you want the clearest summary of the project, repository, and trust boundary.</p>
   </a>
   <a class="vespid-hub-card vespid-hub-card--tall" href="/docs/">
     <div class="vespid-meta">Documentation</div>
-    <h3>Read the durable GEO reference</h3>
-    <p>Use the docs when you want stable guidance about public surfaces, machine-readable artifacts, and GEO publishing rules.</p>
+    <h3>Read the durable reference</h3>
+    <p>Use the docs when you want stable guidance about the contract surface, gateway runtime, and HTTP demo flow.</p>
   </a>
   <a class="vespid-hub-card" href="/blog/">
     <div class="vespid-meta">Blog</div>
-    <h3>Read the reasoning</h3>
-    <p>Use the blog for rationale, tradeoffs, and field notes that have not yet hardened into reference pages.</p>
+    <h3>Read the decisions</h3>
+    <p>Use the blog for launch context and why the project stays HTTP-first before adding more adapter surfaces.</p>
   </a>
 </div>
