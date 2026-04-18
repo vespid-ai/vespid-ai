@@ -15,6 +15,14 @@ export default defineConfig({
       customCss: ['./src/styles/custom.css'],
       components: {
         Header: './src/components/Header.astro',
+        PageFrame: './src/components/starlight/PageFrame.astro',
+        Sidebar: './src/components/starlight/Sidebar.astro',
+        PageSidebar: './src/components/starlight/PageSidebar.astro',
+        Footer: './src/components/starlight/Footer.astro',
+        Pagination: './src/components/starlight/Pagination.astro',
+        TwoColumnContent: './src/components/starlight/TwoColumnContent.astro',
+        ContentPanel: './src/components/starlight/ContentPanel.astro',
+        PageTitle: './src/components/starlight/PageTitle.astro',
       },
       favicon: '/favicon.svg',
       head: [
@@ -22,7 +30,7 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             name: 'theme-color',
-            content: '#f7f9fc',
+            content: '#121317',
           },
         },
         {
@@ -105,8 +113,8 @@ export default defineConfig({
           content: `try {
   const key = 'starlight-theme';
   if (!localStorage.getItem(key)) {
-    localStorage.setItem(key, 'light');
-    document.documentElement.dataset.theme = 'light';
+    localStorage.setItem(key, 'dark');
+    document.documentElement.dataset.theme = 'dark';
   }
 } catch {}`,
         },

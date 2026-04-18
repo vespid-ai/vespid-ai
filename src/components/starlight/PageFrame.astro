@@ -1,0 +1,12 @@
+---
+import DefaultPageFrame from '@astrojs/starlight/components/PageFrame.astro';
+---
+
+<div class="vespid-shell-frame">
+  <DefaultPageFrame>
+    <Fragment slot="header"><slot name="header" /></Fragment>
+    <Fragment slot="sidebar"><slot name="sidebar" /></Fragment>
+    <slot />
+  </DefaultPageFrame>
+</div>
+

@@ -1,0 +1,11 @@
+---
+import DefaultTwoColumnContent from '@astrojs/starlight/components/TwoColumnContent.astro';
+---
+
+<div class="vespid-two-column-shell">
+  <DefaultTwoColumnContent>
+    <Fragment slot="right-sidebar"><slot name="right-sidebar" /></Fragment>
+    <slot />
+  </DefaultTwoColumnContent>
+</div>
+
