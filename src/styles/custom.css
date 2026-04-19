@@ -735,6 +735,59 @@ main code:not(pre code) {
   color: rgba(64, 69, 80, 0.88);
 }
 
+:root[data-theme='light'] .vespid-section > p,
+:root[data-theme='light'] .vespid-side-card p,
+:root[data-theme='light'] .vespid-project-card p,
+:root[data-theme='light'] .vespid-hub-card p,
+:root[data-theme='light'] .vespid-strip p,
+:root[data-theme='light'] .vespid-proof-bar span,
+:root[data-theme='light'] .vespid-command-list span,
+:root[data-theme='light'] .vespid-project-footer {
+  color: rgba(58, 64, 76, 0.9);
+}
+
+:root[data-theme='light'] .vespid-command-shell,
+:root[data-theme='light'] .expressive-code,
+:root[data-theme='light'] .astro-code {
+  background: #17191f !important;
+  border-color: rgba(17, 21, 27, 0.08) !important;
+}
+
+:root[data-theme='light'] .vespid-command-shell code,
+:root[data-theme='light'] .expressive-code code,
+:root[data-theme='light'] .astro-code code {
+  color: #eef2f7 !important;
+}
+
+:root[data-theme='light'] .vespid-command-card h3,
+:root[data-theme='light'] .vespid-command-list strong,
+:root[data-theme='light'] .vespid-proof-bar strong,
+:root[data-theme='light'] .vespid-strip strong,
+:root[data-theme='light'] .vespid-section h2,
+:root[data-theme='light'] .vespid-section h3,
+:root[data-theme='light'] .vespid-hub-card h3,
+:root[data-theme='light'] .vespid-side-card h3,
+:root[data-theme='light'] .vespid-project-card h3,
+:root[data-theme='light'] .vespid-project-card h3 a,
+:root[data-theme='light'] .vespid-project-topline,
+:root[data-theme='light'] .vespid-project-footer a {
+  color: #171b23;
+}
+
+:root[data-theme='light'] .vespid-meta {
+  background: rgba(17, 21, 27, 0.05);
+  color: rgba(33, 39, 49, 0.78);
+}
+
+:root[data-theme='light'] .vespid-status-pill--green,
+:root[data-theme='light'] .vespid-status-pill--blue,
+:root[data-theme='light'] .vespid-status-pill--amber,
+:root[data-theme='light'] .vespid-status-pill--purple {
+  color: rgba(23, 27, 35, 0.84);
+  background: rgba(17, 21, 27, 0.05);
+  border-color: rgba(17, 21, 27, 0.08);
+}
+
 :root[data-theme='light'] .vespid-shell-frame .sidebar-pane,
 :root[data-theme='light'] .vespid-two-column-shell .right-sidebar {
   background: rgba(248, 249, 252, 0.96);
