@@ -1,6 +1,7 @@
 ---
 title: Why ordinary HTTP comes before adapters
 description: Why vespid keeps the gateway HTTP runtime primary and defers MCP, skills, plugins, and other adapters until the canonical contract is credible.
+template: splash
 ---
 
 A lot of agent infrastructure work immediately jumps to adapters.

@@ -1,6 +1,7 @@
 ---
 title: Project
 description: "The public project hub for vespid.ai now centers on one repository: vespid."
+template: splash
 ---
 
 This is the public project hub for vespid: one repository, one gateway model, and one reference demo that shows the full trust path over ordinary HTTP.

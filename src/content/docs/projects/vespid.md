@@ -1,6 +1,7 @@
 ---
 title: vespid
 description: Contract-first prototype for discoverable, authorized, approvable, and auditable agent-native web services over ordinary HTTP.
+template: splash
 ---
 
 `vespid` is the public core of vespid.ai: a contract-first prototype for making web services discoverable, understandable, authorized, approvable, callable, and auditable by agents through ordinary HTTP.

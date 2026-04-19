@@ -1,6 +1,7 @@
 ---
 title: Documentation
 description: Durable reference material for the vespid contract surface, gateway runtime, and ordinary-HTTP demo path.
+tableOfContents: false
 ---
 
 Documentation is the durable reference layer for vespid.ai: the parts of the project that should still make sense after launch notes and one-off debates stop being enough.

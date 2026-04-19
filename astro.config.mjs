@@ -120,18 +120,9 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        {
-          label: 'Project',
-          autogenerate: { directory: 'projects' },
-        },
-        {
-          label: 'Docs',
-          autogenerate: { directory: 'docs' },
-        },
-        {
-          label: 'Blog',
-          autogenerate: { directory: 'blog' },
-        },
+        'docs/getting-started',
+        'docs/design-language',
+        'docs/support',
       ],
     }),
   ],

@@ -1,6 +1,7 @@
 ---
 title: Why vespid.ai now centers on vespid
 description: Why the public site now introduces one concrete repository and one HTTP runtime story instead of multiple disconnected project narratives.
+template: splash
 ---
 
 The public site is better when it introduces the actual public project.

@@ -1,6 +1,7 @@
 ---
 title: Blog
 description: Launch notes and architecture writing for vespid, the contract-first HTTP prototype for agent-native web services.
+template: splash
 ---
 
 The blog is the short public record for why the vespid project is taking its current shape and what architectural decisions matter before the prototype grows more surfaces.
